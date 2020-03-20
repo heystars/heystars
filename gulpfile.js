@@ -62,6 +62,19 @@ gulp.task('htmlinclude', () => {
 	);
 });
 
+
+// json
+gulp.task('jsoninclude', () => {
+	return pipeline(
+		gulp.src([paths.views + '/*.json']),
+		fileinclude({
+			prefix: '@@',
+			basepath: '@file'
+		}),
+		gulp.dest(paths.dist)
+	);
+});
+
 // sass
 gulp.task('sass', () => {
 	return pipeline(
@@ -189,7 +202,7 @@ gulp.task('font', () => {
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-var tasks = ['copy_assets', 'htmlinclude', 'jshint', 'js', 'sass', 'images', 'font', 'pluginCss', 'pluginJs'];
+var tasks = ['copy_assets', 'htmlinclude', 'jsoninclude' , 'jshint', 'js', 'sass', 'images', 'font', 'pluginCss', 'pluginJs'];
 
 var main = () => {
 
@@ -206,6 +219,14 @@ var main = () => {
 	], {
 		cwd: './'
 	}, ['htmlinclude']);
+
+	gulp.watch([
+		paths.views + '/*.json',
+		paths.views + '/*/*.json',
+		paths.views + '/*/*/*.json'
+	], {
+		cwd: './'
+	}, ['jsoninclude']);
 
 	//watch scss
 	gulp.watch([

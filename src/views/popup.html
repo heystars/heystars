@@ -5,7 +5,9 @@
     <button class="pb">기본팝업(버튼2개)</button>
     <button class="pb">회원가입 완료팝업</button>
     <button class="pb">영상추가 팝업</button>
+    <button class="pb">영상삭제 팝업</button>
     <button class="pb">포인트 획득 팝업</button>
+    <button class="pb">정보수정 팝업</button>
 </div>
 
 <div class="index-box">
@@ -13,7 +15,7 @@
     <div class="popup-wrapper">
         <div class="popup-inner basic">
             <div class="popup-content">
-                <h2 class="noto-font">로그아웃test 되었습니다.</h2>
+                <h2 class="noto-font">로그아웃 되었습니다.</h2>
                 <p class="noto-font">헤이스타즈를 또 이용해주세요 :)</p>
             </div>
             <div class="popup-btn ">
@@ -72,6 +74,22 @@
         <div class="popup-inner">
             <div class="popup-content">
                 <div class="illur-box">
+                    <img src="img/delete-clip.png" alt="영상추가완료">
+                </div>
+                <h2 class="spoqa-font">해당 영상을 CLIP에</h2>
+                <h2 class="spoqa-font">삭제했습니다.</h2>
+                <p class="spoqa-font">Learning > Clip 페이지에서 확인해보세요.</p>
+            </div>
+            <div class="popup-btn ">
+                <button class="noto-font closed">확인</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup-wrapper ">
+        <div class="popup-inner">
+            <div class="popup-content">
+                <div class="illur-box">
                     <img src="img/plus-point.png" alt="회원가입완료">
                 </div>
                 <h2 class="spoqa-font">문제를 맞춰서</h2>
@@ -83,6 +101,38 @@
             </div>
         </div>
         <!-- <div id="bm2" style=""></div> -->
+    </div>
+
+    <div class="popup-wrapper ">
+        <div class="popup-inner">
+            <div class="popup-content">
+                <div class="illur-box">
+                    <img src="img/modify-profile.png" alt="영상추가완료">
+                </div>
+                <h2 class="spoqa-font">내 정보가</h2>
+                <h2 class="spoqa-font">수정되었습니다.</h2>
+                <p class="spoqa-font">마이페이지에서 확인해보세요.</p>
+            </div>
+            <div class="popup-btn ">
+                <button class="noto-font closed">확인</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup-wrapper active">
+        <div class="popup-inner">
+            <div class="popup-content">
+                <div class="illur-box">
+                    <img src="img/waiting.png" alt="영상추가완료">
+                </div>
+                <h2 class="spoqa-font">준비중입니다.</h2>
+                <p class="spoqa-font">해당 서비스는 준비중입니다.</p>
+                <p class="spoqa-font">조금만 기다려주세요!</p>
+            </div>
+            <div class="popup-btn ">
+                <button class="noto-font closed">확인</button>
+            </div>
+        </div>
     </div>
 
 </div>
@@ -112,7 +162,6 @@
             }, 4000);
             if( $('.popup-wrapper').hasClass('active') ) {
                 animation.play();
-                // $('.popup-wrapper.active').removeClass('active');
             }
         });        
 
