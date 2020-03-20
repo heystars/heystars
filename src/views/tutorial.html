@@ -1,0 +1,106 @@
+@@include('modules/head.html')
+
+<div class="content-body tutorial-content">
+    <div class="slide-container">
+        <div class="slide-item active">
+            <div class="img-wrapper">
+                <img src="img/tutorial01.png" alt="튜토리얼">
+            </div>
+            <div class="text-wrapper">
+                <div class="subject">
+                    <p class="product-font">CHOOSE</p>
+                    <p class="product-font">YOUR LANGUAGE</p>
+                </div>
+                <div class="advice">
+                    <p>Listening and speaking</p>
+                    <p>Pepeatedly is key to learning Korean.</p>
+                </div>
+            </div>
+            <div class="language-wrapper">
+                <div class="language-drop">
+                    <span><img class="language" src="img/english.png" alt="영어">English <img class="drop-arrow" src="img/ic-dropdown.png" alt="화살표"></span>
+                    <ul>
+                        <li>test</li>
+                        <li>test</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="slide-item">
+            <div class="img-wrapper">
+                <img src="img/tutorial02.png" alt="튜토리얼">
+            </div>
+            <div class="text-wrapper">
+                <div class="subject">
+                    <p class="product-font">LISTENING AND SPEAKING</p>
+                    <p class="product-font">REPEATEDLY IS KEY</p>
+                    <p class="product-font">TO LEARNING KOREAN</p>
+                </div>
+                <div class="advice">
+                    <p>Listening and speaking</p>
+                    <p>Pepeatedly is key to learning Korean.</p>
+                </div>
+            </div>
+        </div>
+        <div class="slide-item">
+            <div class="img-wrapper">
+                <img src="img/tutorial03.png" alt="튜토리얼">
+            </div>
+            <div class="text-wrapper">
+                <div class="subject">
+                    <p class="product-font">LISTENING AND SPEAKING</p>
+                    <p class="product-font">REPEATEDLY IS KEY</p>
+                </div>
+                <div class="advice">
+                    <p>Listening and speaking</p>
+                    <p>Pepeatedly is key to learning Korean.</p>
+                </div>
+            </div>
+        </div>
+        <div class="slide-item">
+            <div class="img-wrapper">
+                <img src="img/tutorial04.png" alt="튜토리얼">
+            </div>
+            <div class="text-wrapper">
+                <div class="subject">
+                    <p class="product-font">LISTENING AND SPEAKING</p>
+                    <p class="product-font">REPEATEDLY IS KEY</p>
+                </div>
+                <div class="advice">
+                    <p>Listening and speaking</p>
+                    <p>Pepeatedly is key to learning Korean.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="status-container">
+        <div class="bar-item active"></div>
+        <div class="bar-item"></div>
+        <div class="bar-item"></div>
+        <div class="bar-item"></div>
+    </div>
+    <div class="active-btn">
+        <button>Next</button>
+    </div>
+</div>
+
+@@include('modules/scriptHead.html')
+
+
+<script>
+
+    $(document).ready(function(){
+        $('.active-btn').click(function(){
+            $('.bar-item.active').next('.bar-item').addClass('active');
+            $('.bar-item.active').prev('.bar-item').removeClass('active');
+
+
+            $('.slide-item.active').addClass('move').removeClass('active').next('.slide-item').addClass('active');
+            $('.slide-item').last().removeClass('move');
+            if ( $('.bar-item').last().hasClass('active') ) {
+                $(this).children('button').addClass('clear').text('Start');
+            }
+        });
+    });
+
+</script>

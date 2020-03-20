@@ -1,0 +1,80 @@
+.index-box {
+    .popup-wrapper {
+        display: none;
+        background: #f5f5f9;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 0 8.8%;
+        &.active {
+            @include flexAllCenter;
+        }
+        #bm {
+            position: fixed;
+            width: 100%;
+            top: 0;
+        }
+        .popup-inner {
+            width: 100%;
+            background: #fff;
+            border-radius: 25px;
+            overflow: hidden;
+            text-align: center;
+            &.basic {
+                .popup-content {
+                    padding: 52px 0 40px;
+                    height: auto;
+                    h2 {
+                        @include fontSize(24px,700);
+                    }
+                    p {
+                        color: #9b9eaa;
+                    }
+                }
+            }
+            .popup-content {
+                height: 394px;
+                .illur-box {
+                    height: 280px;
+                    @include flexAllCenter;
+                }
+                h2 {
+                    @include fontSize(22px,700);
+                    line-height: 28px;
+                    color: #33384c;
+                    letter-spacing: -.8px;
+                }
+                p {
+                    margin-top: 8px;
+                    @include fontSize(14px,400);
+                    color: #cecece;
+                }
+            }
+            .popup-btn {
+                &.double {
+                    @include flexCenter;
+                    button {
+                        width: 50%;
+                    }
+                }
+                button {
+                    width: 100%;
+                    height: 63px;
+                    background: none;
+                    border: 0;
+                    border-top: 1px solid #f5f5f9;
+                    color: #a9a9a9;
+                    @include fontSize(17px,700);
+                    &.denial {
+                        color: #686868;
+                    }
+                    &.signOut {
+                        color: #e76464;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,124 @@
+@@include('modules/head.html')
+
+<div class="popBtn-wrap">
+    <button class="pb">기본팝업(버튼1개)</button>
+    <button class="pb">기본팝업(버튼2개)</button>
+    <button class="pb">회원가입 완료팝업</button>
+    <button class="pb">영상추가 팝업</button>
+    <button class="pb">포인트 획득 팝업</button>
+</div>
+
+<div class="index-box">
+
+    <div class="popup-wrapper">
+        <div class="popup-inner basic">
+            <div class="popup-content">
+                <h2 class="noto-font">로그아웃이 되었습니다.</h2>
+                <p class="noto-font">헤이스타즈를 또 이용해주세요 :)</p>
+            </div>
+            <div class="popup-btn ">
+                <button class="noto-font closed">확인</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup-wrapper ">
+        <div class="popup-inner basic">
+            <div class="popup-content">
+                <h2 class="noto-font">정말로 탈퇴하시겠습니까?</h2>
+                <p class="noto-font">정말 탈퇴하실건가요? ㅠ.ㅠ</p>
+            </div>
+            <div class="popup-btn double">
+                <button class="noto-font signOut">탈퇴</button>
+                <button class="noto-font denial closed">아니오</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup-wrapper ">
+        <div class="popup-inner">
+            <div class="popup-content">
+                <div class="illur-box">
+                    <img src="img/signup-clear.png" alt="회원가입완료">
+                </div>
+                <h2 class="spoqa-font">회원가입이</h2>
+                <h2 class="spoqa-font">완료되었습니다.</h2>
+                <p class="spoqa-font">지금 헤이스타즈로 공부해보세요.</p>
+            </div>
+            <div class="popup-btn ">
+                <button class="noto-font closed">확인</button>
+            </div>
+        </div>
+        <div id="bm" style=""></div>
+    </div>
+
+    <div class="popup-wrapper ">
+        <div class="popup-inner">
+            <div class="popup-content">
+                <div class="illur-box">
+                    <img src="img/add-clip.png" alt="영상추가완료">
+                </div>
+                <h2 class="spoqa-font">해당 영상을 CLIP에</h2>
+                <h2 class="spoqa-font">추가했습니다.</h2>
+                <p class="spoqa-font">Learning > Clip 페이지에서 확인해보세요.</p>
+            </div>
+            <div class="popup-btn ">
+                <button class="noto-font closed">확인</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup-wrapper ">
+        <div class="popup-inner">
+            <div class="popup-content">
+                <div class="illur-box">
+                    <img src="img/plus-point.png" alt="회원가입완료">
+                </div>
+                <h2 class="spoqa-font">문제를 맞춰서</h2>
+                <h2 class="spoqa-font"><span class="spoqa-font">30</span>포인트를 얻었어요!</h2>
+                <p class="spoqa-font">포인트 혜택을 받아보세요!</p>
+            </div>
+            <div class="popup-btn ">
+                <button class="noto-font closed">확인</button>
+            </div>
+        </div>
+        <!-- <div id="bm2" style=""></div> -->
+    </div>
+
+</div>
+
+
+
+@@include('modules/scriptHead.html')
+
+
+<script>
+    
+    $(document).ready(function(){
+
+
+        $('.pb').on('click',function(){
+            var pb = $(this).index();
+            $('.index-box > div').eq(pb).addClass('active');
+            var animation = bodymovin.loadAnimation({
+                container: document.getElementById('bm'),
+                renderer: 'svg',
+                loop: false,
+                autoplay: false,
+                path: 'bg.json',
+            });
+            setTimeout(function() {
+                $('.popup-wrapper').eq(pb).children('#bm').hide();
+            }, 4000);
+            if( $('.popup-wrapper').hasClass('active') ) {
+                animation.play();
+                // $('.popup-wrapper.active').removeClass('active');
+            }
+        });        
+
+        $('.closed').click(function(){
+            $('.popup-wrapper').removeClass('active');
+        });
+
+    });
+</script>

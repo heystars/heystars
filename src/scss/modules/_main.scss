@@ -1,0 +1,490 @@
+.content-body {
+    &.main-content {
+        padding-bottom: 58px;
+        .loopSlide-container {
+            .swiper-container.loopSlide {
+                padding: 62px 0;
+                .swiper-wrapper {
+                    .swiper-slide {
+                        border-radius: 7px;
+                        height: 204px;
+                        width: 90%;
+                        box-shadow: 0 22px 36px 10px rgba(0,0,0,.15);
+                        background: url(../img/iu.png) center center;
+                        background-size: cover;
+                        position: relative;
+                        overflow: hidden;
+                        .blur-box {
+                            position: absolute;
+                            bottom: 0;
+                            width: 100%;
+                            background: rgba(0,0,0,.01);
+                            backdrop-filter: blur(11px);
+                            padding: 13px 0 15px;
+                            text-align: center;
+                            .video-timer {
+                                position: absolute;
+                                top: -21px;
+                                right: 7px;
+                                background: rgba(0,0,0,.5);
+                                width: 35px;
+                                height: 17px;
+                                border-radius: 99px;
+                                @include flexAllCenter;
+                                span {
+                                    @include fontSize(10px,400);
+                                    color: rgba(255,255,255,.8);
+                                }
+                            }
+                            h2 {
+                                color: #fff;
+                                @include fontSize(17px,400);
+                                line-height: 17px;
+                                margin-bottom: 10px;
+                                letter-spacing: -.5px;
+                            }
+                            .box-info {
+                                opacity: .7;
+                                span {
+                                    border: .5px solid #fff;
+                                    color: #fff;
+                                    @include fontSize(11px,300);
+                                    padding: 4px 10px;
+                                    border-radius: 99px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .swiper-pagination {
+                    bottom: -22px;
+                    &.swiper-pagination-bullets {
+                        .swiper-pagination-bullet {
+                            margin-left: 0;
+                            margin-right: 5px;
+                            width: 4px;
+                            height: 4px;
+                            background: #d8d8d8;
+                            border-radius: 2px;
+                            opacity: 1;
+                        }
+                        .swiper-pagination-bullet-active {
+                            width: 14px;
+                            background: #0ad09a;
+                            transition: .3s;
+                        }
+                    }
+                }
+            }
+        }
+        .today-container {
+            .wordSlide-wrapper {
+                margin-top: 17px;
+                padding-left: 18px;
+                .swiper-container.wordSlide {
+                    padding-bottom: 46px;
+                    .swiper-wrapper {
+                        .swiper-slide {
+                            width: 158px;
+                            border-radius: 11px;
+                            height: 92px;
+                            box-shadow: 7px 15px 24px 0 rgba(0,0,0,.09);
+                            position: relative;
+                            padding: 8px 17px;
+                            >img {
+                                position: absolute;
+                                width: 20px;
+                                right: 14px;
+                                top: 14px;
+                            }
+                            .korean {
+                                @include fontSize(17px,900);
+                                line-height: 28px;
+                                letter-spacing: -.5px;
+                                color: #2f2d3b;
+                                margin-bottom: 1px;
+                            }
+                            .english {
+                                @include fontSize(13px,700);
+                                color: #7c7c7c;
+                                letter-spacing: -.07px;
+                                line-height: 21px;
+                            }
+                            >p {
+                                @include fontSize(12px,700);
+                                line-height: 21px;
+                                letter-spacing: -.07px;
+                                color: #bfbfbf;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .videoSlide-container {
+            &.video02 {
+                .videoSlide-wrapper {
+                    .swiper-container.videoSlide {
+                        .swiper-wrapper {
+                            .swiper-slide {
+                                .thumbnail-box {
+                                    background: url(../img/ssam.png) center center;
+                                    background-size: cover;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            &.video03 {
+                .videoSlide-wrapper {
+                    .swiper-container.videoSlide {
+                        .swiper-wrapper {
+                            .swiper-slide {
+                                .thumbnail-box {
+                                    background: url(../img/umi.png) center center;
+                                    background-size: cover;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            &.video04 {
+                .videoSlide-wrapper {
+                    .swiper-container.videoSlide {
+                        .swiper-wrapper {
+                            .swiper-slide {
+                                .thumbnail-box {
+                                    background: url(../img/gong.png) center center;
+                                    background-size: cover;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .videoSlide-wrapper {
+                padding-left: 18px;
+                margin-top: 20px;
+                .swiper-container.videoSlide {
+                    padding-bottom: 46px;
+                    .swiper-wrapper {
+                        .swiper-slide {
+                            width: calc( 90% + 18px );
+                            border-radius: 11px;
+                            overflow: hidden;
+                            box-shadow: 7px 18px 24px 0 rgba(0,0,0,.07);
+                            .thumbnail-box {
+                                background: url(../img/song.png) center center;
+                                background-size: cover;
+                                height: 185px;
+                                position: relative;
+                                overflow: hidden;
+                                .point-num {
+                                    z-index: 1;
+                                    position: absolute;
+                                    left: 15px;
+                                    bottom: 9px;
+                                    color: #868686;
+                                    @include fontSize(11px,700);
+                                    span {
+                                        color: #0ad09a;
+                                        margin-right: 2px;
+                                    }
+                                }
+                                .video-timer {
+                                    z-index: 1;
+                                    position: absolute;
+                                    right: 8px;
+                                    bottom: 9px;
+                                    background: rgba(0,0,0,.5);
+                                    width: 35px;
+                                    height: 17px;
+                                    border-radius: 99px;
+                                    @include flexAllCenter;
+                                    span {
+                                        @include fontSize(10px,400);
+                                        color: rgba(255,255,255,.8);
+                                    }
+                                }
+                                .shadow-box {
+                                    position: absolute;
+                                    bottom: -25px;
+                                    width: 100%;
+                                    height: 116px;
+                                    opacity: .78;
+                                    background: linear-gradient(to bottom, rgba(0,0,0,0),#000);
+                                }
+                            }
+                            .videoInfo-box {
+                                padding: 19px 19px 15px;
+                                .korean {
+                                    &:after {
+                                        @include clearBoth;
+                                    }
+                                    h2 {
+                                        float: left;
+                                        @include fontSize(15px,700);
+                                        letter-spacing: -.5px;
+                                        color: #000;
+                                        img {
+                                            width: 20px;
+                                            margin-left: 5px;
+                                            margin-bottom: 3px;
+                                        }
+                                    }
+                                }
+                                .vietnam {
+                                    margin-top: 7px;
+                                    p {
+                                        color: #a2a2a2;
+                                        @include fontSize(14px,400);
+                                    }
+                                }
+                                .video-title {
+                                    margin-top: 18px;
+                                    @include flexCenter;
+                                    .video-profile {
+                                        width: 20px;
+                                        height: 20px;
+                                        border-radius: 10px;
+                                        background: url(../img/song.png) center center;
+                                        background-size: cover;
+                                        margin-right: 4px;
+                                    }
+                                    p {
+                                        color: #adadad;
+                                        letter-spacing: -.5px;
+                                        @include fontSize(14px,400);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .categorySlide-container {
+            margin-top: 16px;
+            .categorySlide-wrapper {
+                margin-top: 12px;
+                .swiper-container.categorySlide {
+                    padding-bottom: 115px;
+                    .swiper-wrapper {
+                        .swiper-slide {
+                            @include flexAllCenter;
+                            position: relative;
+                            width: 242px;
+                            height: 242px;
+                            overflow: hidden;
+                            border-radius: 121px;
+                            background: url(../img/category-bg.png) center center;
+                            background-size: cover;
+                            box-shadow: 7px 15px 24px 0 rgba(0,0,0,.24);
+                            .slide-content {
+                                padding-top: 13px;
+                                position: absolute;
+                                z-index: 1;
+                                text-align: center;
+                                ul {
+                                    li {
+                                        @include fontSize(26px,700);
+                                        color: #fff;
+                                        margin-bottom: 7px;
+                                        letter-spacing: -.7px;
+                                        &:last-of-type {
+                                            margin-bottom: 0;
+                                        }
+                                    }
+                                }
+                                .box-info {
+                                    margin-top: 15px;
+                                    span {
+                                        color: #fff;
+                                        border: .5px solid #fff;
+                                        @include fontSize(10px,500);
+                                        letter-spacing: -.3px;
+                                        padding: 5px 15px;
+                                        border-radius: 99px;
+                                    }
+                                }
+                            }
+                            .black-cover {
+                                position: absolute;
+                                top: 0;
+                                bottom: 0;
+                                left: 0;
+                                right: 0;
+                                background: rgba(0,0,0,.25);
+                            }
+                        }
+                    }
+                    .swiper-pagination {
+                        bottom: 65px;
+                        &.swiper-pagination-bullets {
+                            @include flexAllCenter;
+                            .swiper-pagination-bullet {
+                                margin-left: 0;
+                                margin-right: 5px;
+                                width: 4px;
+                                height: 4px;
+                                background: #d8d8d8;
+                                border-radius: 7px;
+                                opacity: 1;
+                            }
+                            .swiper-pagination-bullet-active {
+                                width: 6px;
+                                height: 6px;
+                                background: #525252;
+                                transition: .3s;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .hotIssue-container {
+            margin-bottom: 46px;
+            .hotIssue-wrapper {
+                padding: 0 18px;
+                .hotIssue-inner {
+                    margin-top: 21px;
+                    height: 372px;
+                    border-radius: 11px;
+                    overflow: hidden;
+                    position: relative;
+                    background: url(../img/issue.png) center center;
+                    background-size: cover;
+                    .shadow-box {
+                        position: absolute;
+                        bottom: 0;
+                        width: 100%;
+                        height: 104px;
+                        opacity: .78;
+                        background: linear-gradient(to bottom,rgba(0,0,0,0),#000);
+                    }
+                    .issue-subject {
+                        position: absolute;
+                        bottom: 0;
+                        padding: 27px 24px;
+                        color: #fff;
+                        ul {
+                            li {
+                                @include fontSize(26px,700);
+                                letter-spacing: -.7px;
+                                margin-bottom: 7px;
+                                &:last-of-type {
+                                    margin-bottom: 0;
+                                }
+                            }
+                        }
+                        p {
+                            @include fontSize(11px,500);
+                            color: rgba(255,255,255,.7);
+                            margin-top: 7px;
+                            line-height: 16px;
+                        }
+                    }
+                }
+            }
+        }
+        .videoList-container {
+            margin-bottom: 54px;
+            .videoList-wrapper {
+                margin-top: 20px;
+                padding: 0 18px;
+                .videoList-inner {
+                    border-radius: 11px;
+                    overflow: hidden;
+                    box-shadow: 7px 18px 24px 0 rgba(0,0,0,.07);
+                    .thumbnail-box {
+                        background: url(../img/follow.png) center center;
+                        background-size: cover;
+                        height: 185px;
+                        position: relative;
+                        overflow: hidden;
+                        .point-num {
+                            z-index: 1;
+                            position: absolute;
+                            left: 15px;
+                            bottom: 9px;
+                            color: #868686;
+                            @include fontSize(11px,700);
+                            span {
+                                color: #0ad09a;
+                                margin-right: 2px;
+                            }
+                        }
+                        .video-timer {
+                            z-index: 1;
+                            position: absolute;
+                            right: 8px;
+                            bottom: 9px;
+                            background: rgba(0,0,0,.5);
+                            width: 35px;
+                            height: 17px;
+                            border-radius: 99px;
+                            @include flexAllCenter;
+                            span {
+                                @include fontSize(10px,400);
+                                color: rgba(255,255,255,.8);
+                            }
+                        }
+                        .shadow-box {
+                            position: absolute;
+                            bottom: -25px;
+                            width: 100%;
+                            height: 116px;
+                            opacity: .78;
+                            background: linear-gradient(to bottom, rgba(0,0,0,0),#000);
+                        }
+                    }
+                    .videoInfo-box {
+                        padding: 19px 19px 15px;
+                        .korean {
+                            &:after {
+                                @include clearBoth;
+                            }
+                            h2 {
+                                float: left;
+                                @include fontSize(15px,700);
+                                letter-spacing: -.5px;
+                                color: #000;
+                                img {
+                                    width: 20px;
+                                    margin-left: 5px;
+                                    margin-bottom: 3px;
+                                }
+                            }
+                        }
+                        .vietnam {
+                            margin-top: 7px;
+                            p {
+                                color: #a2a2a2;
+                                @include fontSize(14px,400);
+                            }
+                        }
+                        .video-title {
+                            margin-top: 18px;
+                            @include flexCenter;
+                            .video-profile {
+                                width: 20px;
+                                height: 20px;
+                                border-radius: 10px;
+                                background: url(../img/song.png) center center;
+                                background-size: cover;
+                                margin-right: 4px;
+                            }
+                            p {
+                                color: #adadad;
+                                letter-spacing: -.5px;
+                                @include fontSize(14px,400);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

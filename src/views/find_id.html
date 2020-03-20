@@ -1,0 +1,41 @@
+@@include('modules/head.html')
+@@include('modules/subHeader.html')
+
+<div class="content-body find-content">
+    <div class="find-container">
+        <div class="find-title">
+            <h2 class="product-font">Forgot ID?</h2>
+        </div>
+        <div class="find-advice">
+            <p>Listening and speaking</p>
+            <p>Repeatedly is key to learning Korean.</p>
+        </div>
+        <div class="input-wrapper">
+            <div class="input-inner find-id">
+                <input type="text" placeholder="Email" onchange="findId()">
+                <!-- info-text 에 positive / denial 각각 클래스 추가시 문구 보여짐 -->
+                <div class="info-text ">
+                    <p class="noto-font">*2020.08.20에 가입 된 아이디입니다.</p>
+                </div>
+            </div>
+        </div>
+        <div class="btn-wrapper">
+            <button type="submit" class="clear-data">Find</button>
+        </div>
+    </div>
+</div>
+
+@@include('modules/scriptHead.html')
+
+
+<script>
+
+    function findId(){
+        if ($('.input-inner.find-id input').val() != "") {
+            $('.input-inner input').addClass('active').parents('.input-wrapper').siblings('.btn-wrapper').children('button').addClass('clear-data');
+        }else{
+            $('.input-inner input').parents('.input-wrapper').siblings('.btn-wrapper').children('button').removeClass('clear-data');
+        }
+    }
+
+</script>

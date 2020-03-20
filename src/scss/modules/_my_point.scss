@@ -1,0 +1,118 @@
+.content-body {
+    &.point-content {
+        padding: 62px 18px 18px;
+        background: #0ad09a url(../img/bg-point.png) top right no-repeat;
+        min-height: 100%;
+        .point-container {
+            .point-subject {
+                padding-left: 8px;
+                color: #fff;
+                h2 {
+                    @include fontSize(20px,700);
+                    letter-spacing: -.45px;
+                }
+                p {
+                    @include flexCenter;
+                    margin-top: 7px;
+                    span {
+                        @include fontSize(30px,700);
+                    }
+                    img {
+                        margin-left: 2px;
+                    }
+                }
+            }
+            .point-wrapper {
+                margin-top: 20px;
+                padding: 8px 26px 0;
+                background: #fff;
+                border-radius: 17px;
+                min-height: calc( 100vh - 161px );
+                &.none-list {
+                    >ul {
+                        display: none;
+                    }
+                    .none-list {
+                        text-align: center;
+                        padding-top: 16%;
+                        h2 {
+                            margin: 10px 0;
+                            @include fontSize(21px,700);
+                            color: #46484f;
+                            line-height: 27px;
+                        }
+                        p {
+                            color: #cecece;
+                            @include fontSize(14px,400);
+                            line-height: 19px;
+                        }
+                    }
+                }
+                .none-list {
+                    display: none;
+                }
+                >ul>li {
+                    padding: 20px 0;
+                    position: relative;
+                    .list-info {
+                        p {
+                            color: #3f3f3f;
+                            @include fontSize(12.5px,700);
+                            line-height: 15px;
+                        }
+                        ul {
+                            margin-top: 5px;
+                            &:after {
+                                @include clearBoth;
+                            }
+                            li {
+                                @include fontSize(10px,400);
+                                color: #b9b9b9;
+                                float: left;
+                                &:first-child {
+                                    text-overflow: ellipsis;
+                                    white-space: nowrap;
+                                    word-wrap: normal;
+                                    overflow: hidden;
+                                    max-width: 134px;
+                                    margin-right: 10px;
+                                }
+                                &:last-child {
+                                    position: relative;
+                                    &:before {
+                                        left: -7px;
+                                        top: 0;
+                                        content: "/";
+                                        display: block;
+                                        position: absolute;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .list-point {
+                        position: absolute;
+                        @include flexCenter;
+                        right: 0;
+                        top: 50%;
+                        transform: translate(0,-50%);
+                        p {
+                            @include fontSize(14px,700);
+                            margin-right: 3px;
+                            &.plus {
+                                color: #0ad09a;
+                            }
+                            &.minus {
+                                color: #ff656a;
+                            }
+                        }
+                        span {
+                            @include fontSize(12px,600);
+                            color: rgba(#444,.4);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

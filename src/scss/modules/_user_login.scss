@@ -1,0 +1,77 @@
+.content-body {
+    &.user-content {
+        height: 100vh;
+        position: relative;
+        padding: 0 32px;
+        @include flexAllCenter;
+        .login-container {
+            width: 100%;
+            padding-bottom: 50px;
+            .login-section {
+                .logo-wrapper {
+                    margin: 0 auto 61px;
+                    width: 132px;
+                    img {
+                        width: 100%;
+                    }
+                }
+                >ul {
+                    margin-top: 18px;
+                    &:after {
+                        @include clearBoth;
+                    }
+                    li {
+                        float: left;
+                        &:last-of-type {
+                            float: right;
+                        }
+                        a {
+                            @include flexCenter;
+                            text-decoration: none;
+                            @include fontSize(13px,500);
+                            color: #8f8aa2;
+                            img {
+                                width: 12px;
+                                margin-right: 4px;
+                            }
+                        }
+                    }
+                }
+            }
+            .subLogin-section {
+                margin-top: 30px;
+                >img {
+                    width: 100%;
+                }
+                >ul {
+                    @include flexCenter;
+                    margin-top: 20px;
+                    li {
+                        width: 25%;
+                        text-align: center;
+                        img {
+                            width: 61px;
+                        }
+                    }
+                }
+            }
+        }
+        .signUp-container {
+            position: absolute;
+            bottom: 41px;
+            @include flexCenter;
+            cursor: pointer;
+            p {
+                @include fontSize(12px,400);
+                color: #919191;
+                text-decoration-line: underline;
+            }
+            strong {
+                text-decoration-line: none;
+                margin-left: 5px;
+                @include fontSize(14px,500);
+                color: #1d1d1d;
+            }
+        }
+    }
+}

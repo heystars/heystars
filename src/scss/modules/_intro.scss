@@ -1,0 +1,69 @@
+.content-body {
+    &.intro-content {
+        overflow: hidden;
+        .swiper-container.bgSlide {
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            z-index: -1;
+            .swiper-wrapper {
+                .swiper-slide {
+                    &.intro-slide01 {
+                        background: url(../img/bg-intro01.png) center center;
+                        background-size: cover;
+                    }
+                    &.intro-slide02 {
+                        background: url(../img/bg-intro02.png) center center;
+                        background-size: cover;
+                    }
+                    &.intro-slide03 {
+                        background: url(../img/bg-intro03.png) center center;
+                        background-size: cover;
+                    }
+                }
+            }
+        }
+        .intro-container {
+            .content-section {
+                padding-top: 24vh;
+                padding-left: 10%;
+                .slogan-wrapper {
+                    margin-bottom: 15vh;
+                    .slogan {
+                        width: 42.667%;
+                    }
+                }
+                .swiper-container.loginSlide {
+                    .swiper-wrapper {
+                        .swiper-slide {
+                            width: 60px !important;
+                            margin-right: 16px;
+                            img {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .signUp-container {
+            position: fixed;
+            left: calc( 50% - 80px );
+            bottom: 41px;
+            @include flexCenter;
+            cursor: pointer;
+            color: #fff;
+            p {
+                @include fontSize(12px,400);
+                text-decoration-line: underline;
+            }
+            strong {
+                text-decoration-line: none;
+                margin-left: 5px;
+                @include fontSize(14px,500);
+            }
+        }
+    }
+}
