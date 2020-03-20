@@ -22,11 +22,20 @@ header {
         z-index: 2;
     }
     &.subHeader {
-        background: none;
+        @include flexAllCenter;
+        &.white {
+            background: none;
+        }
         img {
             position: absolute;
+            left: 18px;
             top: 50%;
             transform: translate(0,-50%);
+        }
+        h1 {
+            letter-spacing: -.7px;
+            @include fontSize(18px,500);
+            color: #424d5e;
         }
     }
 }

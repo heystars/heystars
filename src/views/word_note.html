@@ -1,0 +1,61 @@
+@@include('modules/head.html')
+@@include('modules/subHeader_white.html')
+
+<div class="content-body note-content">
+    <div class="note-container">
+        <div class="note-subject">
+            <h2 class="noto-font">오늘의 단어</h2>
+        </div>
+        <div class="note-wrapper "><!-- none-list 클래스 추가시 리스트없음 -->
+            <ul>
+                <li>
+                    <div class="list-info">
+                        <p class="noto-font">영상공부</p>
+                        <ul>
+                            <li class="spoqa-font">너도 인간이니 - 처음으로 그걸본다</li>
+                            <li class="spoqa-font">2020.09.15</li>
+                        </ul>
+                    </div>
+                    <div class="list-point">
+                        <p class="spoqa-font plus">+50</p>
+                        <span class="noto-font">Point</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="list-info">
+                        <p class="noto-font">영상공부</p>
+                        <ul>
+                            <li class="spoqa-font">너도 인간이니 - 처음으로 그걸본다</li>
+                            <li class="spoqa-font">2020.09.15</li>
+                        </ul>
+                    </div>
+                    <div class="list-point">
+                        <p class="spoqa-font minus">-50</p>
+                        <span class="noto-font">Point</span>
+                    </div>
+                </li>
+            </ul>
+            <div class="none-list">
+                <img src="img/none-point.png" alt="포인트없음">
+                <h2 class="spoqa-font">적립된 포인트가 없습니다.</h2>
+                <p class="noto-font">꾸준히 공부해서</p>
+                <p class="noto-font">포인트를 쌓아보세요!</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+@@include('modules/scriptHead.html')
+
+
+<script>
+
+    function findId(){
+        if ($('.input-inner.find-id input').val() != "") {
+            $('.input-inner input').addClass('active').parents('.input-wrapper').siblings('.btn-wrapper').children('button').addClass('clear-data');
+        }else{
+            $('.input-inner input').parents('.input-wrapper').siblings('.btn-wrapper').children('button').removeClass('clear-data');
+        }
+    }
+
+</script>

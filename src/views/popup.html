@@ -37,7 +37,7 @@
         </div>
     </div>
 
-    <div class="popup-wrapper ">
+    <div class="popup-wrapper has-ani">
         <div class="popup-inner">
             <div class="popup-content">
                 <div class="illur-box">
@@ -51,7 +51,7 @@
                 <button class="noto-font closed">확인</button>
             </div>
         </div>
-        <div id="bm" style=""></div>
+        <!-- <div id="bm" style=""></div> -->
     </div>
 
     <div class="popup-wrapper ">
@@ -119,7 +119,7 @@
         </div>
     </div>
 
-    <div class="popup-wrapper active">
+    <div class="popup-wrapper">
         <div class="popup-inner">
             <div class="popup-content">
                 <div class="illur-box">
@@ -160,7 +160,7 @@
             setTimeout(function() {
                 $('.popup-wrapper').eq(pb).children('#bm').hide();
             }, 4000);
-            if( $('.popup-wrapper').hasClass('active') ) {
+            if( $('.popup-wrapper.active').hasClass('has-ani') ) {
                 animation.play();
             }
         });        

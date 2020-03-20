@@ -398,6 +398,10 @@
                     border-radius: 11px;
                     overflow: hidden;
                     box-shadow: 7px 18px 24px 0 rgba(0,0,0,.07);
+                    margin-bottom: 14px;
+                    &:last-of-type {
+                        margin-bottom: 0;
+                    }
                     .thumbnail-box {
                         background: url(../img/follow.png) center center;
                         background-size: cover;

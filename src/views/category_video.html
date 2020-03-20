@@ -1,0 +1,69 @@
+@@include('modules/head.html')
+@@include('modules/subHeader_title.html')
+
+<div class="content-body hot-content">
+    <div class="videoList-container">
+        <div class="hot-subject">
+            <h2 class="noto-font">사랑에 관한 한국 드라마</h2>
+        </div>
+        <div class="videoList-wrapper">
+            <div class="videoList-inner">
+                <div class="thumbnail-box">
+                    <p class="spoqa-font point-num"><span>+30</span>Point</p>
+                    <div class="video-timer">
+                        <span>00:36</span>
+                    </div>
+                    <div class="shadow-box"></div>
+                </div>
+                <div class="videoInfo-box">
+                    <div class="korean">
+                        <h2 class="noto-font">너 오늘 너무 이쁘다<img class="speak-btn" src="img/ic-speaker.png" alt="듣기"></h2>
+                    </div>
+                    <div class="vietnam">
+                        <p>Đó là một chút khó khăn để tồn tại.</p>
+                    </div>
+                    <div class="video-title">
+                        <div class="video-profile"></div>
+                        <p>Descendants of the Sun</p>
+                    </div>
+                </div>
+            </div>
+           <div class="videoList-inner">
+                <div class="thumbnail-box">
+                    <p class="spoqa-font point-num"><span>+30</span>Point</p>
+                    <div class="video-timer">
+                        <span>00:36</span>
+                    </div>
+                    <div class="shadow-box"></div>
+                </div>
+                <div class="videoInfo-box">
+                    <div class="korean">
+                        <h2 class="noto-font">너 오늘 너무 이쁘다<img class="speak-btn" src="img/ic-speaker.png" alt="듣기"></h2>
+                    </div>
+                    <div class="vietnam">
+                        <p>Đó là một chút khó khăn để tồn tại.</p>
+                    </div>
+                    <div class="video-title">
+                        <div class="video-profile"></div>
+                        <p>Descendants of the Sun</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+</div>
+
+@@include('modules/scriptHead.html')
+
+
+<script>
+
+    function findId(){
+        if ($('.input-inner.find-id input').val() != "") {
+            $('.input-inner input').addClass('active').parents('.input-wrapper').siblings('.btn-wrapper').children('button').addClass('clear-data');
+        }else{
+            $('.input-inner input').parents('.input-wrapper').siblings('.btn-wrapper').children('button').removeClass('clear-data');
+        }
+    }
+
+</script>
