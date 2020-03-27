@@ -14,12 +14,19 @@ $(document).ready(function(){
 
     $(window).scroll(function(){
         if($(window).scrollTop() > 0) {
-            $('header').addClass('scrolled');
+            $('.header').addClass('scrolled');
         } else {
-            $('header').removeClass('scrolled');
+            $('.header').removeClass('scrolled');
         }
     });
 
-    
+    $('.tab-wrapper li').click(function(){
+        $(this).addClass('active').siblings('li');
+        $(this).siblings('.active').children('img').attr('src',$(this).siblings('.active').children('img').attr('src').replace('-ov.png','.png'));
+        $(this).children('img').attr('src',$(this).children('img').attr('src').replace('.png','-ov.png'));
+        if( $(this).hasClass('active') ) {
+            $(this).siblings('li').removeClass('active');
+        }
+    });
 
 });

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1"/>
+    <meta name="format-detection" content="telephone=no">
+
+    <title>HEYSTARS</title>
+
+    <link rel="stylesheet" type="text/css" href="plugin/vendor.min.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <script type="text/javascript" src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+</head>
+<body class="@@class">
+<div class="wrapper">
+
+<div class="content-body intro-content">
+    <div class="swiper-container bgSlide">
+        <div class="swiper-wrapper">
+            <div class="intro-slide01 swiper-slide"></div>
+            <div class="intro-slide02 swiper-slide"></div>
+            <div class="intro-slide03 swiper-slide"></div>
+        </div>
+    </div>
+    <div class="intro-container">
+        <div class="content-section">
+            <div class="slogan-wrapper">
+                <img class="slogan" src="img/intro-slogan.png" alt="슬로건">
+            </div>
+            <div class="swiper-container loginSlide">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img/btn-google.png" alt="구글 로그인"></div>
+                    <div class="swiper-slide"><img src="img/btn-facebook.png" alt="페이스북 로그인"></div>
+                    <div class="swiper-slide"><img src="img/btn-line.png" alt="라인 로그인"></div>
+                    <div class="swiper-slide"><img src="img/btn-zalo.png" alt="얄로 로그인"></div>
+                    <div class="swiper-slide"><img src="img/btn-zalo.png" alt="얄로 로그인"></div>
+                </div>
+            </div> 
+        </div>
+    </div>
+    <div class="signUp-container">
+        <p class="spoqa-font">Not yet a member?</p><strong>Sign up</strong>
+    </div>
+</div>
+
+
+
+</div>
+</body>
+
+<script type="text/javascript" src="plugin/vendor.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+</html>
+
+<script>
+    var bgSwiper = new Swiper('.swiper-container.bgSlide',{
+        loop: true,
+        autoplay: {
+            delay: 4000
+        }
+    });
+
+    var loginSwiper = new Swiper('.swiper-container.loginSlide',{
+        slidesPerView: 4,
+        spaceBetween: 16
+    });
+</script>

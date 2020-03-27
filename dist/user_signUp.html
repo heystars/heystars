@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1"/>
+    <meta name="format-detection" content="telephone=no">
+
+    <title>HEYSTARS</title>
+
+    <link rel="stylesheet" type="text/css" href="plugin/vendor.min.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <script type="text/javascript" src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+</head>
+<body class="@@class">
+<div class="wrapper">
+
+<div class="content-body user-content">
+    <div class="login-container">
+        <div class="login-section">
+            <div class="logo-wrapper">
+                <img src="img/ic-logo-green.png" alt="로고">
+            </div>
+            <div class="input-wrapper">
+                <div class="input-inner signup-mail">
+                    <input type="text" placeholder="Email" onchange="singUp()">
+                </div>
+                <div class="input-inner signup-nick">
+                    <input type="text" class="has-btn" placeholder="Nickname" onchange="singUp()">
+                    <button type="button" class="chk-btn">Search</button>
+                </div>
+                <div class="input-inner signup-pw">
+                    <input type="password" placeholder="Password" onchange="singUp()">
+                </div>
+                <div class="input-inner signup-rPw">
+                    <input type="password" placeholder="Retype Password" onchange="singUp()">
+                </div>
+            </div>
+            <div class="btn-wrapper">
+                <button type="submit" class="clear-data">Sign in</button>
+            </div>
+        </div>
+    </div>
+    <div class="signUp-container">
+        <p>Not yet a member?</p><strong>Sign up</strong>
+    </div>
+</div>
+
+
+
+</div>
+</body>
+
+<script type="text/javascript" src="plugin/vendor.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+</html>
+
+
+<script>
+
+
+
+
+    function singUp(){
+        if ($('.input-inner.signup-mail input').val() != "" && $('.input-inner.signup-nick input').val() != "" && $('.input-inner.signup-pw input').val() != "" && $('.input-inner.signup-rPw input').val() != "") {
+            $('.input-inner input').addClass('active').parents('.input-wrapper').siblings('.btn-wrapper').children('button').addClass('clear-data');
+        }else{
+            $('.input-inner input').parents('.input-wrapper').siblings('.btn-wrapper').children('button').removeClass('clear-data');
+        }
+    }
+
+</script>

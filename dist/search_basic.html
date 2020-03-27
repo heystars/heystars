@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1"/>
+    <meta name="format-detection" content="telephone=no">
+
+    <title>HEYSTARS</title>
+
+    <link rel="stylesheet" type="text/css" href="plugin/vendor.min.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <script type="text/javascript" src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+</head>
+<body class="@@class">
+<div class="wrapper">
+<header class="subHeader search">
+    <h1 class="noto-font">검색</h1>
+</header>
+
+<div class="content-body search-content">
+    <div class="search-container">
+        <div class="search-wrapper">
+            <input type="text" class="search-bar noto-font" id="search">
+            <button class="search-delete"><img src="img/ic-close.png" alt="삭제"></button>
+        </div>
+        <div class="searchList-wrapper">
+            <div class="searchList-title">
+                <p class="noto-font">최근 검색어</p>
+            </div>
+            <ul>
+                <li>
+                    <div class="subject">
+                        <span class="noto-font">잼잼</span>
+                    </div>
+                    <div class="date-box">
+                        <span>2020.08.13</span>
+                    </div>
+                    <button class="delete-list"><img src="img/ic-close.png" alt="닫기"></button>
+                </li>
+                <li>
+                    <div class="subject">
+                        <span class="noto-font">아이유</span>
+                    </div>
+                    <div class="date-box">
+                        <span>2020.08.13</span>
+                    </div>
+                    <button class="delete-list"><img src="img/ic-close.png" alt="닫기"></button>
+                </li>
+                <li>
+                    <div class="subject">
+                        <span class="noto-font">백예린</span>
+                    </div>
+                    <div class="date-box">
+                        <span>2020.08.13</span>
+                    </div>
+                    <button class="delete-list"><img src="img/ic-close.png" alt="닫기"></button>
+                </li>
+            </ul>
+        </div>
+        <div class="videoList-wrapper"><!-- none-list 제거시 동영상 리스트 show -->
+            <div class="none-list">
+                <img src="img/none-point.png" alt="포인트없음">
+                <h2 class="spoqa-font">검색 결과가 없습니다.</h2>
+            </div>
+            <div class="videoList-inner">
+               <div class="thumbnail-box">
+                  <p class="spoqa-font point-num"><span>+30</span>Point</p>
+                  <div class="video-timer">
+                     <span>00:36</span>
+                  </div>
+                  <div class="shadow-box"></div>
+               </div>
+               <div class="videoInfo-box">
+                  <div class="korean">
+                     <h2 class="noto-font">너 오늘 너무 이쁘다<img class="speak-btn" src="img/ic-speaker.png" alt="듣기"></h2>
+                  </div>
+                  <div class="vietnam">
+                     <p>Đó là một chút khó khăn để tồn tại.</p>
+                  </div>
+                  <div class="video-title">
+                     <div class="video-profile"></div>
+                     <p>Descendants of the Sun</p>
+                  </div>
+               </div>
+            </div> 
+            <div class="videoList-inner">
+               <div class="thumbnail-box">
+                  <p class="spoqa-font point-num"><span>+30</span>Point</p>
+                  <div class="video-timer">
+                     <span>00:36</span>
+                  </div>
+                  <div class="shadow-box"></div>
+               </div>
+               <div class="videoInfo-box">
+                  <div class="korean">
+                     <h2 class="noto-font">너 오늘 너무 이쁘다<img class="speak-btn" src="img/ic-speaker.png" alt="듣기"></h2>
+                  </div>
+                  <div class="vietnam">
+                     <p>Đó là một chút khó khăn để tồn tại.</p>
+                  </div>
+                  <div class="video-title">
+                     <div class="video-profile"></div>
+                     <p>Descendants of the Sun</p>
+                  </div>
+               </div>
+            </div> 
+         </div>
+    </div>
+</div>
+
+<footer>
+    <div class="tab-wrapper">
+        <div class="tab-inner">
+            <ul>
+                <li class="active">
+                    <img src="img/ic-home-ov.png" alt="홈">
+                </li>
+                <li>
+                    <img src="img/ic-learning.png" alt="공부">
+                </li>
+                <li>
+                    <img src="img/ic-search.png" alt="검색">
+                </li>
+                <li>
+                    <img src="img/ic-mypage.png" alt="마이페이지">
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+
+</div>
+</body>
+
+<script type="text/javascript" src="plugin/vendor.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+</html>
+
+
+<script>
+    $(document).ready(function(){
+        $('.search-bar').focus();
+
+        $('.delete-list').click(function(){
+            $(this).parent('li').hide();
+        });
+    });
+    $("#search").on("propertychange change keyup paste input", function() {
+        if ($(this).val() != "") {
+            $('.search-delete').addClass('active');
+            $('.videoList-wrapper').addClass('showing');
+            $('.searchList-wrapper').addClass('hideing');
+        } else {
+            $('.search-delete').removeClass('active');
+            $('.videoList-wrapper').removeClass('showing');
+            $('.searchList-wrapper').removeClass('hideing');
+        }
+    });
+
+    $('.search-delete').click(function(){
+        $('#search').val(null);
+        $(this).removeClass('active');
+        $('.videoList-wrapper').removeClass('showing');
+        $('.searchList-wrapper').removeClass('hideing');
+    });
+</script>
+

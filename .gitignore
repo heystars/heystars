@@ -39,6 +39,6 @@ node_modules.windows
 node_modules.mac
 npm-debug.log
 
-dist/
+src/
 
 # file : ~ / .gitignore_global

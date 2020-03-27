@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1"/>
+    <meta name="format-detection" content="telephone=no">
+
+    <title>HEYSTARS</title>
+
+    <link rel="stylesheet" type="text/css" href="plugin/vendor.min.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <script type="text/javascript" src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+</head>
+<body class="@@class">
+<div class="wrapper">
+<header class="header subHeader white">
+    <img src="img/ic-back-white.png" alt="뒤로가기">
+</header>
+
+<div class="content-body play-content">
+    <div class="play-container">
+        <iframe  id="ytplayer" type="text/html" width="auto" height="210.9375" src="https://www.youtube.com/embed/KPqtlI3aJIE? autoplay=1&enablejsapi=1&fs=0&modestbranding=1&iv_load_policy=3" frameborder="0" allowfullscreen></iframe>
+        <div class="bar-timer">
+            <div class="video-timer">
+                <span>00:36</span>
+            </div>
+            <div class="watching-bar">
+                <div class="color-bar"></div>
+            </div>
+        </div>
+    </div>
+    <div class="word-container">
+        <div class="swiper-container quizSlide">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="word-wrapper">
+                    <div class="language-inner">
+                        <div class="korean">
+                            <p class="noto-font">난 이것도 안간의 마음이라고 생각해</p><img class="speak-btn" src="img/ic-speaker.png" alt="듣기">
+                        </div>
+                        <div class="vietnam">
+                            <p>Tôi muốn chụp không chỉ nữ mà cả nam.</p>
+                        </div>
+                        <div class="english">
+                            <p>I think this is the human mind</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-wrapper">
+                    <ul>
+                        <li><span class="noto-font">인간</span>:<span>human</span></li>
+                        <li><span class="noto-font">마음</span>:<span>mind</span></li>
+                        <li><span class="noto-font">생각</span>:<span>think</span></li>
+                    </ul>
+                </div>
+                </div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+                <div class="swiper-slide">Slide 4</div>
+                <div class="swiper-slide">Slide 5</div>
+                <div class="swiper-slide">Slide 6</div>
+                <div class="swiper-slide">Slide 7</div>
+                <div class="swiper-slide">Slide 8</div>
+                <div class="swiper-slide">Slide 9</div>
+                <div class="swiper-slide">Slide 10</div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        
+    </div>
+    <div class="quiz-container">
+
+    </div>
+</div>
+
+
+
+</div>
+</body>
+
+<script type="text/javascript" src="plugin/vendor.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+</html>
+
+
+<script>
+
+    $(document).ready(function(){
+        var videoHeight = $('.play-container').outerHeight();
+        var mobileHeight = $(window).outerHeight();
+        var wordHeight = $('.word-container').outerHeight();
+        var quizHeight = $('.quiz-container').outerHeight();
+        $('.word-container').css('height',mobileHeight - videoHeight - quizHeight);
+    });
+
+    var quizSwiper = new Swiper('.swiper-container.quizSlide', {
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'fraction',
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+
+</script>

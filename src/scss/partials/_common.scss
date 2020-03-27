@@ -5,8 +5,8 @@ header {
     top: 0;
     left: 0;
     padding-left: 18px;
-    background: #fff;
     @include flexCenter;
+    z-index: 1;
     .main-logo {
         width: 113px;
     }
@@ -20,11 +20,57 @@ header {
     }
     &.scrolled {
         z-index: 2;
+        background: #fff;
     }
     &.subHeader {
         @include flexAllCenter;
-        &.white {
-            background: none;
+        &.green {
+            background: #0ad09a;
+        }
+        &.search {
+            position: inherit;
+            display: block;
+            padding-top: 29px;
+            height: 80px;
+            h1 {
+                @include fontSize(24px,700);
+                color: #4d4d4d;
+                line-height: 39px;
+            }
+        }
+        &.learning {
+            position: inherit;
+            display: block;
+            padding-top: 29px;
+            height: 94px;
+            &:after {
+                @include clearBoth;
+            }
+            h1 {
+                @include fontSize(24px,700);
+                color: #4d4d4d;
+                line-height: 39px;
+                float: left;
+            }
+            ul {
+                float: left;
+                height: 39px;
+                @include flexCenter;
+                margin-left: 16px;
+                li {
+                    @include flexCenter;
+                    margin-right: 12px;
+                    @include fontSize(16px,700);
+                    color: rgba(#4d4d4d,.3);
+                    letter-spacing: -.4px;
+                    &.active {
+                        color: #0ad09a;
+                    }
+                    &:last-of-type {
+                        margin-right: 0;
+                    }
+                }
+            }
         }
         img {
             position: absolute;
@@ -69,8 +115,11 @@ footer {
     &.find-content {
         padding: 92px 28px 0;
     }
-    &.main-content {
-        // padding-top: 62px;
+    &.search-content {
+        padding: 0 18px 68px;
+    }
+    &.learning-content {
+        padding: 0 18px 68px;
     }
 }
 

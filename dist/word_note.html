@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1"/>
+    <meta name="format-detection" content="telephone=no">
+
+    <title>HEYSTARS</title>
+
+    <link rel="stylesheet" type="text/css" href="plugin/vendor.min.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <script type="text/javascript" src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+</head>
+<body class="@@class">
+<div class="wrapper">
+<header class="header subHeader green">
+    <img src="img/ic-back-white.png" alt="뒤로가기">
+</header>
+
+<div class="content-body note-content">
+    <div class="note-container">
+        <div class="note-subject">
+            <h2 class="noto-font">오늘의 단어</h2>
+        </div>
+        <div class="note-wrapper"><!-- none-list 클래스 추가시 리스트없음 -->
+            <div class="note-inner">
+                <div class="date">
+                    <p>2020.03.02</p>
+                </div>
+                <ul>
+                    <li>
+                        <div class="img-box"></div>
+                        <div class="word-box">
+                            <p class="korean noto-font">마법</p>
+                            <p class="english">Magic</p>
+                            <p>Saga</p>
+                        </div>
+                        <img class="speak-btn" src="img/ic-speaker.png" alt="듣기">
+                    </li>
+                </ul>
+            </div>
+            <div class="note-inner">
+                <div class="date">
+                    <p>2020.03.02</p>
+                </div>
+                <ul>
+                    <li>
+                        <div class="img-box"></div>
+                        <div class="word-box">
+                            <p class="korean noto-font">마법</p>
+                            <p class="english">Magic</p>
+                            <p>Saga</p>
+                        </div>
+                        <img class="speak-btn" src="img/ic-speaker.png" alt="듣기">
+                    </li>
+                </ul>
+            </div>
+            <div class="note-inner">
+                <div class="date">
+                    <p>2020.03.02</p>
+                </div>
+                <ul>
+                    <li>
+                        <div class="img-box"></div>
+                        <div class="word-box">
+                            <p class="korean noto-font">마법</p>
+                            <p class="english">Magic</p>
+                            <p>Saga</p>
+                        </div>
+                        <img class="speak-btn" src="img/ic-speaker.png" alt="듣기">
+                    </li>
+                </ul>
+            </div>
+            <div class="note-inner">
+                <div class="date">
+                    <p>2020.03.02</p>
+                </div>
+                <ul>
+                    <li>
+                        <div class="img-box"></div>
+                        <div class="word-box">
+                            <p class="korean noto-font">마법</p>
+                            <p class="english">Magic</p>
+                            <p>Saga</p>
+                        </div>
+                        <img class="speak-btn" src="img/ic-speaker.png" alt="듣기">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+</div>
+</body>
+
+<script type="text/javascript" src="plugin/vendor.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+</html>
+
+
+<script>
+
+$(document).ready(function(){
+    $('.speak-btn').click(function(){
+        $(this).siblings('.word-box').children('.korean').toggleClass('active');
+    });
+});
+
+</script>
