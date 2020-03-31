@@ -18,15 +18,21 @@ header {
         transform: translate(0,-50%);
         border: 0;
     }
+    &.fixed {
+        &.white {
+            background: #fff;
+        }
+        
+    }
     &.scrolled {
         z-index: 2;
         background: #fff;
-    }
-    &.subHeader {
-        @include flexAllCenter;
         &.green {
             background: #0ad09a;
         }
+    }
+    &.subHeader {
+        @include flexAllCenter;
         &.search {
             position: inherit;
             display: block;

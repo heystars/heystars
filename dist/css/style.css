@@ -528,11 +528,10 @@
 
 .content-body.main-content .today-container .wordSlide-wrapper {
 	margin-top: 17px;
-	padding-left: 18px;
 }
 
 .content-body.main-content .today-container .wordSlide-wrapper .swiper-container.wordSlide {
-	padding-bottom: 46px;
+	padding: 0 18px 46px;
 }
 
 .content-body.main-content .today-container .wordSlide-wrapper .swiper-container.wordSlide .swiper-wrapper .swiper-slide {
@@ -547,7 +546,7 @@
 .content-body.main-content .today-container .wordSlide-wrapper .swiper-container.wordSlide .swiper-wrapper .swiper-slide > img {
 	position: absolute;
 	width: 20px;
-	right: 14px;
+	right: 11px;
 	top: 14px;
 }
 
@@ -558,6 +557,11 @@
 	letter-spacing: -.5px;
 	color: #2f2d3b;
 	margin-bottom: 1px;
+	max-width: 108px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	word-wrap: normal;
+	overflow: hidden;
 }
 
 .content-body.main-content .today-container .wordSlide-wrapper .swiper-container.wordSlide .swiper-wrapper .swiper-slide .english {
@@ -592,16 +596,15 @@
 }
 
 .content-body.main-content .videoSlide-container .videoSlide-wrapper {
-	padding-left: 18px;
 	margin-top: 20px;
 }
 
 .content-body.main-content .videoSlide-container .videoSlide-wrapper .swiper-container.videoSlide {
-	padding-bottom: 46px;
+	padding: 0 18px 46px;
 }
 
 .content-body.main-content .videoSlide-container .videoSlide-wrapper .swiper-container.videoSlide .swiper-wrapper .swiper-slide {
-	width: calc( 90% + 18px);
+	width: 100%;
 	border-radius: 11px;
 	overflow: hidden;
 	box-shadow: 7px 18px 24px 0 rgba(0, 0, 0, 0.07);
@@ -1662,7 +1665,7 @@
 	display: none;
 }
 
-.content-body.noteDetail-content .noteDetail-container .swiper-container.noteSlide .swiper-wrapper .swiper-slide .noteDetail-inner .item-box .steping .first-item, .content-body.noteDetail-content .noteDetail-container .swiper-container.noteSlide .swiper-wrapper .swiper-slide .noteDetail-inner .item-box .steping .third-item {
+.content-body.noteDetail-content .noteDetail-container .swiper-container.noteSlide .swiper-wrapper .swiper-slide .noteDetail-inner .item-box .steping .first-item, .content-body.noteDetail-content .noteDetail-container .swiper-container.noteSlide .swiper-wrapper .swiper-slide .noteDetail-inner .item-box .steping .second-item, .content-body.noteDetail-content .noteDetail-container .swiper-container.noteSlide .swiper-wrapper .swiper-slide .noteDetail-inner .item-box .steping .last-item {
 	display: none;
 }
 
@@ -1696,22 +1699,22 @@
 	}
 }
 
-.content-body.noteDetail-content .noteDetail-container .swiper-container.noteSlide .swiper-wrapper .swiper-slide .noteDetail-inner .item-box .steping .first-item.active, .content-body.noteDetail-content .noteDetail-container .swiper-container.noteSlide .swiper-wrapper .swiper-slide .noteDetail-inner .item-box .steping .third-item.active {
+.content-body.noteDetail-content .noteDetail-container .swiper-container.noteSlide .swiper-wrapper .swiper-slide .noteDetail-inner .item-box .steping .first-item.active, .content-body.noteDetail-content .noteDetail-container .swiper-container.noteSlide .swiper-wrapper .swiper-slide .noteDetail-inner .item-box .steping .second-item.active, .content-body.noteDetail-content .noteDetail-container .swiper-container.noteSlide .swiper-wrapper .swiper-slide .noteDetail-inner .item-box .steping .last-item.active {
 	display: block;
 }
 
-.content-body.noteDetail-content .noteDetail-container .swiper-container.noteSlide .swiper-wrapper .swiper-slide .noteDetail-inner .item-box .steping .first-item .loading, .content-body.noteDetail-content .noteDetail-container .swiper-container.noteSlide .swiper-wrapper .swiper-slide .noteDetail-inner .item-box .steping .third-item .loading {
+.content-body.noteDetail-content .noteDetail-container .swiper-container.noteSlide .swiper-wrapper .swiper-slide .noteDetail-inner .item-box .steping .first-item .loading, .content-body.noteDetail-content .noteDetail-container .swiper-container.noteSlide .swiper-wrapper .swiper-slide .noteDetail-inner .item-box .steping .second-item .loading, .content-body.noteDetail-content .noteDetail-container .swiper-container.noteSlide .swiper-wrapper .swiper-slide .noteDetail-inner .item-box .steping .last-item .loading {
 	width: 53px;
 	margin: 0 auto 8px;
 }
 
-.content-body.noteDetail-content .noteDetail-container .swiper-container.noteSlide .swiper-wrapper .swiper-slide .noteDetail-inner .item-box .steping .first-item .loading:after, .content-body.noteDetail-content .noteDetail-container .swiper-container.noteSlide .swiper-wrapper .swiper-slide .noteDetail-inner .item-box .steping .third-item .loading:after {
+.content-body.noteDetail-content .noteDetail-container .swiper-container.noteSlide .swiper-wrapper .swiper-slide .noteDetail-inner .item-box .steping .first-item .loading:after, .content-body.noteDetail-content .noteDetail-container .swiper-container.noteSlide .swiper-wrapper .swiper-slide .noteDetail-inner .item-box .steping .second-item .loading:after, .content-body.noteDetail-content .noteDetail-container .swiper-container.noteSlide .swiper-wrapper .swiper-slide .noteDetail-inner .item-box .steping .last-item .loading:after {
 	content: "";
 	display: block;
 	clear: both;
 }
 
-.content-body.noteDetail-content .noteDetail-container .swiper-container.noteSlide .swiper-wrapper .swiper-slide .noteDetail-inner .item-box .steping .first-item .loading > div, .content-body.noteDetail-content .noteDetail-container .swiper-container.noteSlide .swiper-wrapper .swiper-slide .noteDetail-inner .item-box .steping .third-item .loading > div {
+.content-body.noteDetail-content .noteDetail-container .swiper-container.noteSlide .swiper-wrapper .swiper-slide .noteDetail-inner .item-box .steping .first-item .loading > div, .content-body.noteDetail-content .noteDetail-container .swiper-container.noteSlide .swiper-wrapper .swiper-slide .noteDetail-inner .item-box .steping .second-item .loading > div, .content-body.noteDetail-content .noteDetail-container .swiper-container.noteSlide .swiper-wrapper .swiper-slide .noteDetail-inner .item-box .steping .last-item .loading > div {
 	width: 8px;
 	height: 8px;
 	float: left;
@@ -1727,57 +1730,57 @@
 	        justify-content: center;
 }
 
-.content-body.noteDetail-content .noteDetail-container .swiper-container.noteSlide .swiper-wrapper .swiper-slide .noteDetail-inner .item-box .steping .first-item .loading > div:nth-child(1) div, .content-body.noteDetail-content .noteDetail-container .swiper-container.noteSlide .swiper-wrapper .swiper-slide .noteDetail-inner .item-box .steping .third-item .loading > div:nth-child(1) div {
+.content-body.noteDetail-content .noteDetail-container .swiper-container.noteSlide .swiper-wrapper .swiper-slide .noteDetail-inner .item-box .steping .first-item .loading > div:nth-child(1) div, .content-body.noteDetail-content .noteDetail-container .swiper-container.noteSlide .swiper-wrapper .swiper-slide .noteDetail-inner .item-box .steping .second-item .loading > div:nth-child(1) div, .content-body.noteDetail-content .noteDetail-container .swiper-container.noteSlide .swiper-wrapper .swiper-slide .noteDetail-inner .item-box .steping .last-item .loading > div:nth-child(1) div {
 	background: #D1E7BC;
 	-webkit-animation: loading .8s .1s infinite;
 	        animation: loading .8s .1s infinite;
 }
 
-.content-body.noteDetail-content .noteDetail-container .swiper-container.noteSlide .swiper-wrapper .swiper-slide .noteDetail-inner .item-box .steping .first-item .loading > div:nth-child(2) div, .content-body.noteDetail-content .noteDetail-container .swiper-container.noteSlide .swiper-wrapper .swiper-slide .noteDetail-inner .item-box .steping .third-item .loading > div:nth-child(2) div {
+.content-body.noteDetail-content .noteDetail-container .swiper-container.noteSlide .swiper-wrapper .swiper-slide .noteDetail-inner .item-box .steping .first-item .loading > div:nth-child(2) div, .content-body.noteDetail-content .noteDetail-container .swiper-container.noteSlide .swiper-wrapper .swiper-slide .noteDetail-inner .item-box .steping .second-item .loading > div:nth-child(2) div, .content-body.noteDetail-content .noteDetail-container .swiper-container.noteSlide .swiper-wrapper .swiper-slide .noteDetail-inner .item-box .steping .last-item .loading > div:nth-child(2) div {
 	background: #80E096;
 	-webkit-animation: loading .8s .2s infinite;
 	        animation: loading .8s .2s infinite;
 }
 
-.content-body.noteDetail-content .noteDetail-container .swiper-container.noteSlide .swiper-wrapper .swiper-slide .noteDetail-inner .item-box .steping .first-item .loading > div:nth-child(3) div, .content-body.noteDetail-content .noteDetail-container .swiper-container.noteSlide .swiper-wrapper .swiper-slide .noteDetail-inner .item-box .steping .third-item .loading > div:nth-child(3) div {
+.content-body.noteDetail-content .noteDetail-container .swiper-container.noteSlide .swiper-wrapper .swiper-slide .noteDetail-inner .item-box .steping .first-item .loading > div:nth-child(3) div, .content-body.noteDetail-content .noteDetail-container .swiper-container.noteSlide .swiper-wrapper .swiper-slide .noteDetail-inner .item-box .steping .second-item .loading > div:nth-child(3) div, .content-body.noteDetail-content .noteDetail-container .swiper-container.noteSlide .swiper-wrapper .swiper-slide .noteDetail-inner .item-box .steping .last-item .loading > div:nth-child(3) div {
 	background: #81BD9F;
 	-webkit-animation: loading .8s .3s infinite;
 	        animation: loading .8s .3s infinite;
 }
 
-.content-body.noteDetail-content .noteDetail-container .swiper-container.noteSlide .swiper-wrapper .swiper-slide .noteDetail-inner .item-box .steping .first-item .loading > div:last-of-type, .content-body.noteDetail-content .noteDetail-container .swiper-container.noteSlide .swiper-wrapper .swiper-slide .noteDetail-inner .item-box .steping .third-item .loading > div:last-of-type {
+.content-body.noteDetail-content .noteDetail-container .swiper-container.noteSlide .swiper-wrapper .swiper-slide .noteDetail-inner .item-box .steping .first-item .loading > div:last-of-type, .content-body.noteDetail-content .noteDetail-container .swiper-container.noteSlide .swiper-wrapper .swiper-slide .noteDetail-inner .item-box .steping .second-item .loading > div:last-of-type, .content-body.noteDetail-content .noteDetail-container .swiper-container.noteSlide .swiper-wrapper .swiper-slide .noteDetail-inner .item-box .steping .last-item .loading > div:last-of-type {
 	margin-right: 0;
 }
 
-.content-body.noteDetail-content .noteDetail-container .swiper-container.noteSlide .swiper-wrapper .swiper-slide .noteDetail-inner .item-box .steping .first-item .loading > div:last-of-type div, .content-body.noteDetail-content .noteDetail-container .swiper-container.noteSlide .swiper-wrapper .swiper-slide .noteDetail-inner .item-box .steping .third-item .loading > div:last-of-type div {
+.content-body.noteDetail-content .noteDetail-container .swiper-container.noteSlide .swiper-wrapper .swiper-slide .noteDetail-inner .item-box .steping .first-item .loading > div:last-of-type div, .content-body.noteDetail-content .noteDetail-container .swiper-container.noteSlide .swiper-wrapper .swiper-slide .noteDetail-inner .item-box .steping .second-item .loading > div:last-of-type div, .content-body.noteDetail-content .noteDetail-container .swiper-container.noteSlide .swiper-wrapper .swiper-slide .noteDetail-inner .item-box .steping .last-item .loading > div:last-of-type div {
 	background: #4BBBC0;
 	-webkit-animation: loading .8s .4s infinite;
 	        animation: loading .8s .4s infinite;
 }
 
-.content-body.noteDetail-content .noteDetail-container .swiper-container.noteSlide .swiper-wrapper .swiper-slide .noteDetail-inner .item-box .steping .first-item .loading > div > div, .content-body.noteDetail-content .noteDetail-container .swiper-container.noteSlide .swiper-wrapper .swiper-slide .noteDetail-inner .item-box .steping .third-item .loading > div > div {
+.content-body.noteDetail-content .noteDetail-container .swiper-container.noteSlide .swiper-wrapper .swiper-slide .noteDetail-inner .item-box .steping .first-item .loading > div > div, .content-body.noteDetail-content .noteDetail-container .swiper-container.noteSlide .swiper-wrapper .swiper-slide .noteDetail-inner .item-box .steping .second-item .loading > div > div, .content-body.noteDetail-content .noteDetail-container .swiper-container.noteSlide .swiper-wrapper .swiper-slide .noteDetail-inner .item-box .steping .last-item .loading > div > div {
 	width: 2px;
 	height: 2px;
 	border-radius: 9px;
 }
 
-.content-body.noteDetail-content .noteDetail-container .swiper-container.noteSlide .swiper-wrapper .swiper-slide .noteDetail-inner .item-box .steping .first-item p, .content-body.noteDetail-content .noteDetail-container .swiper-container.noteSlide .swiper-wrapper .swiper-slide .noteDetail-inner .item-box .steping .third-item p {
+.content-body.noteDetail-content .noteDetail-container .swiper-container.noteSlide .swiper-wrapper .swiper-slide .noteDetail-inner .item-box .steping .first-item p, .content-body.noteDetail-content .noteDetail-container .swiper-container.noteSlide .swiper-wrapper .swiper-slide .noteDetail-inner .item-box .steping .second-item p, .content-body.noteDetail-content .noteDetail-container .swiper-container.noteSlide .swiper-wrapper .swiper-slide .noteDetail-inner .item-box .steping .last-item p {
 	color: #959595;
 	font-size: 12px;
 	font-weight: 500;
 }
 
-.content-body.noteDetail-content .noteDetail-container .swiper-container.noteSlide .swiper-wrapper .swiper-slide .noteDetail-inner .item-box .steping .second-item p {
+.content-body.noteDetail-content .noteDetail-container .swiper-container.noteSlide .swiper-wrapper .swiper-slide .noteDetail-inner .item-box .steping .last-item p {
 	font-size: 12px;
 	font-weight: 500;
 	color: #959595;
 }
 
-.content-body.noteDetail-content .noteDetail-container .swiper-container.noteSlide .swiper-wrapper .swiper-slide .noteDetail-inner .item-box .steping .second-item p img {
+.content-body.noteDetail-content .noteDetail-container .swiper-container.noteSlide .swiper-wrapper .swiper-slide .noteDetail-inner .item-box .steping .last-item p img {
 	margin-left: 3px;
 }
 
-.content-body.noteDetail-content .noteDetail-container .swiper-container.noteSlide .swiper-wrapper .swiper-slide .noteDetail-inner .item-box .steping .second-item strong {
+.content-body.noteDetail-content .noteDetail-container .swiper-container.noteSlide .swiper-wrapper .swiper-slide .noteDetail-inner .item-box .steping .last-item strong {
 	color: #0ad09a;
 	font-size: 20px;
 	font-weight: 700;
@@ -1785,7 +1788,7 @@
 	display: block;
 }
 
-.content-body.noteDetail-content .noteDetail-container .swiper-container.noteSlide .swiper-wrapper .swiper-slide .noteDetail-inner .item-box .steping .second-item strong.bad {
+.content-body.noteDetail-content .noteDetail-container .swiper-container.noteSlide .swiper-wrapper .swiper-slide .noteDetail-inner .item-box .steping .last-item strong.bad {
 	color: #f35858;
 }
 
@@ -1821,11 +1824,11 @@
 	        justify-content: center;
 }
 
-.content-body.noteDetail-content .noteDetail-container .swiper-container.noteSlide .swiper-wrapper .swiper-slide .noteDetail-inner .item-box .btn-step div.default-btn, .content-body.noteDetail-content .noteDetail-container .swiper-container.noteSlide .swiper-wrapper .swiper-slide .noteDetail-inner .item-box .btn-step div.second-step {
+.content-body.noteDetail-content .noteDetail-container .swiper-container.noteSlide .swiper-wrapper .swiper-slide .noteDetail-inner .item-box .btn-step div.default-btn, .content-body.noteDetail-content .noteDetail-container .swiper-container.noteSlide .swiper-wrapper .swiper-slide .noteDetail-inner .item-box .btn-step div.first-step, .content-body.noteDetail-content .noteDetail-container .swiper-container.noteSlide .swiper-wrapper .swiper-slide .noteDetail-inner .item-box .btn-step div.last-step {
 	background: #0ad09a;
 }
 
-.content-body.noteDetail-content .noteDetail-container .swiper-container.noteSlide .swiper-wrapper .swiper-slide .noteDetail-inner .item-box .btn-step div.first-step, .content-body.noteDetail-content .noteDetail-container .swiper-container.noteSlide .swiper-wrapper .swiper-slide .noteDetail-inner .item-box .btn-step div.third-step {
+.content-body.noteDetail-content .noteDetail-container .swiper-container.noteSlide .swiper-wrapper .swiper-slide .noteDetail-inner .item-box .btn-step div.second-step {
 	background: #d4d6da;
 }
 
@@ -2364,30 +2367,26 @@
 	background: #0ad09a;
 }
 
-.content-body.play-content .word-container {
+.content-body.play-content .word-container .swiper-container.quizSlide .swiper-wrapper .swiper-slide .word-wrapper {
+	position: relative;
 	padding: 19px 21px 0;
 }
 
-.content-body.play-content .word-container .swiper-container.quizSlide {
-	height: calc( 100% - 41px);
-	position: relative;
-}
-
-.content-body.play-content .word-container .swiper-container.quizSlide .word-wrapper .language-inner > div {
+.content-body.play-content .word-container .swiper-container.quizSlide .swiper-wrapper .swiper-slide .word-wrapper .language-inner > div {
 	margin-bottom: 13px;
 }
 
-.content-body.play-content .word-container .swiper-container.quizSlide .word-wrapper .language-inner > div:last-of-type {
+.content-body.play-content .word-container .swiper-container.quizSlide .swiper-wrapper .swiper-slide .word-wrapper .language-inner > div:last-of-type {
 	margin-bottom: 0;
 }
 
-.content-body.play-content .word-container .swiper-container.quizSlide .word-wrapper .language-inner > div.korean:after {
+.content-body.play-content .word-container .swiper-container.quizSlide .swiper-wrapper .swiper-slide .word-wrapper .language-inner > div.korean:after {
 	content: "";
 	display: block;
 	clear: both;
 }
 
-.content-body.play-content .word-container .swiper-container.quizSlide .word-wrapper .language-inner > div.korean p {
+.content-body.play-content .word-container .swiper-container.quizSlide .swiper-wrapper .swiper-slide .word-wrapper .language-inner > div.korean p {
 	float: left;
 	line-height: 18px;
 	font-size: 19px;
@@ -2396,32 +2395,32 @@
 	letter-spacing: -.7px;
 }
 
-.content-body.play-content .word-container .swiper-container.quizSlide .word-wrapper .language-inner > div.korean img {
+.content-body.play-content .word-container .swiper-container.quizSlide .swiper-wrapper .swiper-slide .word-wrapper .language-inner > div.korean img {
 	width: 20px;
 	float: left;
 	margin-left: 6px;
 }
 
-.content-body.play-content .word-container .swiper-container.quizSlide .word-wrapper .language-inner > div.vietnam p {
+.content-body.play-content .word-container .swiper-container.quizSlide .swiper-wrapper .swiper-slide .word-wrapper .language-inner > div.vietnam p {
 	font-size: 14px;
 	font-weight: 400;
 	color: #80838f;
 	letter-spacing: -.3px;
 }
 
-.content-body.play-content .word-container .swiper-container.quizSlide .word-wrapper .language-inner > div.english p {
+.content-body.play-content .word-container .swiper-container.quizSlide .swiper-wrapper .swiper-slide .word-wrapper .language-inner > div.english p {
 	font-size: 14px;
 	font-weight: 400;
 	color: rgba(153, 156, 166, 0.85);
 	letter-spacing: -.3px;
 }
 
-.content-body.play-content .word-container .swiper-container.quizSlide .bottom-wrapper {
+.content-body.play-content .word-container .swiper-container.quizSlide .swiper-wrapper .swiper-slide .word-wrapper .bottom-wrapper {
 	position: absolute;
-	bottom: 13px;
+	bottom: 54px;
 }
 
-.content-body.play-content .word-container .swiper-container.quizSlide .bottom-wrapper ul li {
+.content-body.play-content .word-container .swiper-container.quizSlide .swiper-wrapper .swiper-slide .word-wrapper .bottom-wrapper ul li {
 	font-size: 12px;
 	font-weight: 500;
 	color: rgba(41, 46, 66, 0.6);
@@ -2429,21 +2428,735 @@
 	margin-bottom: 3px;
 }
 
-.content-body.play-content .word-container .swiper-container.quizSlide .bottom-wrapper ul li:last-of-type {
+.content-body.play-content .word-container .swiper-container.quizSlide .swiper-wrapper .swiper-slide .word-wrapper .bottom-wrapper ul li:last-of-type {
 	margin-bottom: 0;
 }
 
-.content-body.play-content .word-container .swiper-container.quizSlide .bottom-wrapper ul li span {
+.content-body.play-content .word-container .swiper-container.quizSlide .swiper-wrapper .swiper-slide .word-wrapper .bottom-wrapper ul li span {
 	margin-left: 2px;
 }
 
-.content-body.play-content .word-container .swiper-container.quizSlide .bottom-wrapper ul li span:first-child {
+.content-body.play-content .word-container .swiper-container.quizSlide .swiper-wrapper .swiper-slide .word-wrapper .bottom-wrapper ul li span:first-child {
 	margin-right: 2px;
 }
 
+.content-body.play-content .word-container .swiper-container.quizSlide .swiper-pagination {
+	height: 26px;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	color: #d0d2dc;
+}
+
+.content-body.play-content .word-container .swiper-container.quizSlide .swiper-pagination.en-custom {
+	bottom: 232px;
+}
+
+.content-body.play-content .word-container .swiper-container.quizSlide .swiper-pagination > span {
+	margin-left: 5px;
+	font-family: 'SpoqaHanSans','Sans-serif';
+	font-size: 14px;
+	font-weight: 700;
+	padding-bottom: 3px;
+}
+
+.content-body.play-content .word-container .swiper-container.quizSlide .swiper-pagination > span.swiper-pagination-current {
+	color: #4f4f4f;
+	margin-right: 5px;
+	margin-left: 0;
+}
+
+.content-body.play-content .word-container .swiper-container.quizSlide .swiper-pagination:after {
+	content: "1x";
+	display: block;
+	position: absolute;
+	right: 18px;
+	top: 0;
+	border: 1px solid #000;
+	font-size: 12px;
+	font-weight: 900;
+	color: #6c6c6c;
+	width: 55px;
+	height: 26px;
+	border: 1px solid rgba(146, 146, 146, 0.4);
+	border-radius: 14px;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+}
+
+.content-body.play-content .word-container .swiper-container.quizSlide .swiper-pagination:before {
+	font-family: 'Noto Sans KR';
+	content: "한/베";
+	display: block;
+	position: absolute;
+	left: 18px;
+	top: 0;
+	border: 1px solid #000;
+	font-size: 12px;
+	font-weight: 900;
+	color: #6c6c6c;
+	width: 55px;
+	height: 26px;
+	border: 1px solid rgba(146, 146, 146, 0.4);
+	border-radius: 14px;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+}
+
+.content-body.play-content .word-container .swiper-container.quizSlide .swiper-button-next, .content-body.play-content .word-container .swiper-container.quizSlide .swiper-button-prev {
+	top: inherit;
+	bottom: 240px;
+	width: 7px;
+	margin-top: 0;
+	height: 12px;
+}
+
+.content-body.play-content .word-container .swiper-container.quizSlide .swiper-button-next.swiper-button-disabled, .content-body.play-content .word-container .swiper-container.quizSlide .swiper-button-prev.swiper-button-disabled {
+	opacity: 1;
+}
+
+.content-body.play-content .word-container .swiper-container.quizSlide .swiper-button-next {
+	right: calc( 50% - 39px);
+	background: url(../img/ic-next-mini.png);
+	background-size: cover;
+}
+
+.content-body.play-content .word-container .swiper-container.quizSlide .swiper-button-prev {
+	left: calc( 50% - 39px);
+	background: url(../img/ic-prev-mini.png);
+	background-size: cover;
+}
+
 .content-body.play-content .quiz-container {
-	background: aqua;
+	background: rgba(239, 239, 239, 0.2);
 	height: 213px;
+	position: relative;
+}
+
+.content-body.play-content .quiz-container .start-area {
+	z-index: 2;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: rgba(239, 239, 239, 0.2);
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+}
+
+.content-body.play-content .quiz-container .start-area.hide {
+	display: none;
+}
+
+.content-body.play-content .quiz-container .start-area .start-inner {
+	text-align: center;
+}
+
+.content-body.play-content .quiz-container .start-area .start-inner h2 {
+	color: #292e42;
+	font-size: 19px;
+	font-weight: 700;
+	letter-spacing: -.7px;
+	margin-bottom: 13px;
+}
+
+.content-body.play-content .quiz-container .start-area .start-inner p {
+	color: rgba(29, 29, 29, 0.6);
+	font-size: 12px;
+	font-weight: 400;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+}
+
+.content-body.play-content .quiz-container .start-area .start-inner p img {
+	margin-right: 6px;
+}
+
+.content-body.play-content .quiz-container .quizItem-wrapper .swiper-container.quizItem {
+	height: 213px;
+	padding: 17px 28px;
+}
+
+.content-body.play-content .quiz-container .quizItem-wrapper .swiper-container.quizItem .swiper-wrapper .swiper-slide {
+	width: 100%;
+	background: #fff;
+	border-radius: 11px;
+	padding: 11px 20px 28px;
+	box-shadow: 7px 15px 24px 0 rgba(0, 0, 0, 0.12);
+}
+
+.content-body.play-content .quiz-container .quizItem-wrapper .swiper-container.quizItem .swiper-wrapper .swiper-slide .steping {
+	height: 76px;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+}
+
+.content-body.play-content .quiz-container .quizItem-wrapper .swiper-container.quizItem .swiper-wrapper .swiper-slide .steping > div {
+	display: none;
+}
+
+.content-body.play-content .quiz-container .quizItem-wrapper .swiper-container.quizItem .swiper-wrapper .swiper-slide .steping > div.active {
+	display: block;
+}
+
+.content-body.play-content .quiz-container .quizItem-wrapper .swiper-container.quizItem .swiper-wrapper .swiper-slide .steping .default-item .shape {
+	font-size: 20px;
+	font-weight: 700;
+	color: #565656;
+}
+
+.content-body.play-content .quiz-container .quizItem-wrapper .swiper-container.quizItem .swiper-wrapper .swiper-slide .steping .default-item .shape.active {
+	display: none;
+}
+
+.content-body.play-content .quiz-container .quizItem-wrapper .swiper-container.quizItem .swiper-wrapper .swiper-slide .steping .first-item, .content-body.play-content .quiz-container .quizItem-wrapper .swiper-container.quizItem .swiper-wrapper .swiper-slide .steping .second-item, .content-body.play-content .quiz-container .quizItem-wrapper .swiper-container.quizItem .swiper-wrapper .swiper-slide .steping .last-item {
+	display: none;
+}
+
+@keyframes loading {
+	0% {
+		width: 2px;
+		height: 2px;
+	}
+	50% {
+		width: 8px;
+		height: 8px;
+	}
+	100% {
+		width: 2px;
+		height: 2px;
+	}
+}
+
+.content-body.play-content .quiz-container .quizItem-wrapper .swiper-container.quizItem .swiper-wrapper .swiper-slide .steping .first-item.active, .content-body.play-content .quiz-container .quizItem-wrapper .swiper-container.quizItem .swiper-wrapper .swiper-slide .steping .second-item.active, .content-body.play-content .quiz-container .quizItem-wrapper .swiper-container.quizItem .swiper-wrapper .swiper-slide .steping .last-item.active {
+	display: block;
+}
+
+.content-body.play-content .quiz-container .quizItem-wrapper .swiper-container.quizItem .swiper-wrapper .swiper-slide .steping .first-item .loading, .content-body.play-content .quiz-container .quizItem-wrapper .swiper-container.quizItem .swiper-wrapper .swiper-slide .steping .second-item .loading, .content-body.play-content .quiz-container .quizItem-wrapper .swiper-container.quizItem .swiper-wrapper .swiper-slide .steping .last-item .loading {
+	width: 53px;
+	margin: 0 auto 8px;
+}
+
+.content-body.play-content .quiz-container .quizItem-wrapper .swiper-container.quizItem .swiper-wrapper .swiper-slide .steping .first-item .loading:after, .content-body.play-content .quiz-container .quizItem-wrapper .swiper-container.quizItem .swiper-wrapper .swiper-slide .steping .second-item .loading:after, .content-body.play-content .quiz-container .quizItem-wrapper .swiper-container.quizItem .swiper-wrapper .swiper-slide .steping .last-item .loading:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.content-body.play-content .quiz-container .quizItem-wrapper .swiper-container.quizItem .swiper-wrapper .swiper-slide .steping .first-item .loading > div, .content-body.play-content .quiz-container .quizItem-wrapper .swiper-container.quizItem .swiper-wrapper .swiper-slide .steping .second-item .loading > div, .content-body.play-content .quiz-container .quizItem-wrapper .swiper-container.quizItem .swiper-wrapper .swiper-slide .steping .last-item .loading > div {
+	width: 8px;
+	height: 8px;
+	float: left;
+	margin-right: 7px;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+}
+
+.content-body.play-content .quiz-container .quizItem-wrapper .swiper-container.quizItem .swiper-wrapper .swiper-slide .steping .first-item .loading > div:nth-child(1) div, .content-body.play-content .quiz-container .quizItem-wrapper .swiper-container.quizItem .swiper-wrapper .swiper-slide .steping .second-item .loading > div:nth-child(1) div, .content-body.play-content .quiz-container .quizItem-wrapper .swiper-container.quizItem .swiper-wrapper .swiper-slide .steping .last-item .loading > div:nth-child(1) div {
+	background: #D1E7BC;
+	-webkit-animation: loading .8s .1s infinite;
+	        animation: loading .8s .1s infinite;
+}
+
+.content-body.play-content .quiz-container .quizItem-wrapper .swiper-container.quizItem .swiper-wrapper .swiper-slide .steping .first-item .loading > div:nth-child(2) div, .content-body.play-content .quiz-container .quizItem-wrapper .swiper-container.quizItem .swiper-wrapper .swiper-slide .steping .second-item .loading > div:nth-child(2) div, .content-body.play-content .quiz-container .quizItem-wrapper .swiper-container.quizItem .swiper-wrapper .swiper-slide .steping .last-item .loading > div:nth-child(2) div {
+	background: #80E096;
+	-webkit-animation: loading .8s .2s infinite;
+	        animation: loading .8s .2s infinite;
+}
+
+.content-body.play-content .quiz-container .quizItem-wrapper .swiper-container.quizItem .swiper-wrapper .swiper-slide .steping .first-item .loading > div:nth-child(3) div, .content-body.play-content .quiz-container .quizItem-wrapper .swiper-container.quizItem .swiper-wrapper .swiper-slide .steping .second-item .loading > div:nth-child(3) div, .content-body.play-content .quiz-container .quizItem-wrapper .swiper-container.quizItem .swiper-wrapper .swiper-slide .steping .last-item .loading > div:nth-child(3) div {
+	background: #81BD9F;
+	-webkit-animation: loading .8s .3s infinite;
+	        animation: loading .8s .3s infinite;
+}
+
+.content-body.play-content .quiz-container .quizItem-wrapper .swiper-container.quizItem .swiper-wrapper .swiper-slide .steping .first-item .loading > div:last-of-type, .content-body.play-content .quiz-container .quizItem-wrapper .swiper-container.quizItem .swiper-wrapper .swiper-slide .steping .second-item .loading > div:last-of-type, .content-body.play-content .quiz-container .quizItem-wrapper .swiper-container.quizItem .swiper-wrapper .swiper-slide .steping .last-item .loading > div:last-of-type {
+	margin-right: 0;
+}
+
+.content-body.play-content .quiz-container .quizItem-wrapper .swiper-container.quizItem .swiper-wrapper .swiper-slide .steping .first-item .loading > div:last-of-type div, .content-body.play-content .quiz-container .quizItem-wrapper .swiper-container.quizItem .swiper-wrapper .swiper-slide .steping .second-item .loading > div:last-of-type div, .content-body.play-content .quiz-container .quizItem-wrapper .swiper-container.quizItem .swiper-wrapper .swiper-slide .steping .last-item .loading > div:last-of-type div {
+	background: #4BBBC0;
+	-webkit-animation: loading .8s .4s infinite;
+	        animation: loading .8s .4s infinite;
+}
+
+.content-body.play-content .quiz-container .quizItem-wrapper .swiper-container.quizItem .swiper-wrapper .swiper-slide .steping .first-item .loading > div > div, .content-body.play-content .quiz-container .quizItem-wrapper .swiper-container.quizItem .swiper-wrapper .swiper-slide .steping .second-item .loading > div > div, .content-body.play-content .quiz-container .quizItem-wrapper .swiper-container.quizItem .swiper-wrapper .swiper-slide .steping .last-item .loading > div > div {
+	width: 2px;
+	height: 2px;
+	border-radius: 9px;
+}
+
+.content-body.play-content .quiz-container .quizItem-wrapper .swiper-container.quizItem .swiper-wrapper .swiper-slide .steping .first-item p, .content-body.play-content .quiz-container .quizItem-wrapper .swiper-container.quizItem .swiper-wrapper .swiper-slide .steping .second-item p, .content-body.play-content .quiz-container .quizItem-wrapper .swiper-container.quizItem .swiper-wrapper .swiper-slide .steping .last-item p {
+	color: #959595;
+	font-size: 12px;
+	font-weight: 500;
+}
+
+.content-body.play-content .quiz-container .quizItem-wrapper .swiper-container.quizItem .swiper-wrapper .swiper-slide .steping .last-item p {
+	font-size: 12px;
+	font-weight: 500;
+	color: #959595;
+}
+
+.content-body.play-content .quiz-container .quizItem-wrapper .swiper-container.quizItem .swiper-wrapper .swiper-slide .steping .last-item p img {
+	margin-left: 3px;
+}
+
+.content-body.play-content .quiz-container .quizItem-wrapper .swiper-container.quizItem .swiper-wrapper .swiper-slide .steping .last-item strong {
+	color: #0ad09a;
+	font-size: 20px;
+	font-weight: 700;
+	margin-bottom: 5px;
+	display: block;
+}
+
+.content-body.play-content .quiz-container .quizItem-wrapper .swiper-container.quizItem .swiper-wrapper .swiper-slide .steping .last-item strong.bad {
+	color: #f35858;
+}
+
+.content-body.play-content .quiz-container .quizItem-wrapper .swiper-container.quizItem .swiper-wrapper .swiper-slide .btn-step {
+	width: 198px;
+	margin: 0 auto;
+}
+
+.content-body.play-content .quiz-container .quizItem-wrapper .swiper-container.quizItem .swiper-wrapper .swiper-slide .btn-step div {
+	width: 100%;
+	display: none;
+	height: 42px;
+	border-radius: 21px;
+	border: 0;
+	color: #fff;
+	font-size: 12px;
+	font-weight: 500;
+}
+
+.content-body.play-content .quiz-container .quizItem-wrapper .swiper-container.quizItem .swiper-wrapper .swiper-slide .btn-step div img {
+	margin-right: 6px;
+}
+
+.content-body.play-content .quiz-container .quizItem-wrapper .swiper-container.quizItem .swiper-wrapper .swiper-slide .btn-step div.active {
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+}
+
+.content-body.play-content .quiz-container .quizItem-wrapper .swiper-container.quizItem .swiper-wrapper .swiper-slide .btn-step div.default-btn, .content-body.play-content .quiz-container .quizItem-wrapper .swiper-container.quizItem .swiper-wrapper .swiper-slide .btn-step div.first-step, .content-body.play-content .quiz-container .quizItem-wrapper .swiper-container.quizItem .swiper-wrapper .swiper-slide .btn-step div.last-step {
+	background: #0ad09a;
+}
+
+.content-body.play-content .quiz-container .quizItem-wrapper .swiper-container.quizItem .swiper-wrapper .swiper-slide .btn-step div.second-step {
+	background: #d4d6da;
+}
+
+.content-body.play-content .quiz-container .quizItem-wrapper .swiper-container.quizItem .swiper-wrapper .swiper-slide .my-action {
+	display: none;
+	padding-top: 7px;
+}
+
+.content-body.play-content .quiz-container .quizItem-wrapper .swiper-container.quizItem .swiper-wrapper .swiper-slide .my-action.active {
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+}
+
+.content-body.play-content .quiz-container .quizItem-wrapper .swiper-container.quizItem .swiper-wrapper .swiper-slide .my-action > button {
+	background: none;
+	border: 0;
+	font-size: 10px;
+	font-weight: 500;
+	color: #959595;
+}
+
+.content-body.play-content .quiz-container .quizItem-wrapper .swiper-container.quizItem .swiper-wrapper .swiper-slide .title {
+	font-size: 13px;
+	font-weight: 700;
+	color: rgba(63, 70, 97, 0.8);
+	line-height: 18px;
+}
+
+.content-body.play-content .quiz-container .quizItem-wrapper .swiper-container.quizItem .swiper-wrapper .swiper-slide .title span {
+	line-height: 18px;
+	margin-right: 5px;
+	color: #0ad09a;
+	font-size: 10px;
+	font-weight: 700;
+}
+
+.content-body.play-content .quiz-container .quizItem-wrapper .swiper-container.quizItem .swiper-wrapper .swiper-slide .click-quiz {
+	margin-top: 10px;
+}
+
+.content-body.play-content .quiz-container .quizItem-wrapper .swiper-container.quizItem .swiper-wrapper .swiper-slide .click-quiz .click-target {
+	width: 100%;
+	height: 38px;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	border: 0.7px solid rgba(207, 207, 207, 0.6);
+}
+
+.content-body.play-content .quiz-container .quizItem-wrapper .swiper-container.quizItem .swiper-wrapper .swiper-slide .click-quiz .click-target .flexing span {
+	font-size: 12px;
+	font-weight: 700;
+	color: #3f4661;
+	margin-right: 3px;
+}
+
+.content-body.play-content .quiz-container .quizItem-wrapper .swiper-container.quizItem .swiper-wrapper .swiper-slide .click-quiz .click-target .flexing .placeholder {
+	font-size: 13px;
+	font-weight: 300;
+	color: rgba(128, 131, 143, 0.4);
+}
+
+.content-body.play-content .quiz-container .quizItem-wrapper .swiper-container.quizItem .swiper-wrapper .swiper-slide .click-quiz .click-item {
+	margin: 3px auto 0;
+}
+
+.content-body.play-content .quiz-container .quizItem-wrapper .swiper-container.quizItem .swiper-wrapper .swiper-slide .click-quiz .click-item .item-block .item-inner {
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+}
+
+.content-body.play-content .quiz-container .quizItem-wrapper .swiper-container.quizItem .swiper-wrapper .swiper-slide .click-quiz .click-item .item-block .item-inner span {
+	padding: 6px 12px;
+	background: #f6f6f6;
+	color: #aeaeae;
+	font-size: 12px;
+	font-weight: 400;
+	border-radius: 99px;
+	margin-top: 9px;
+	display: block;
+	float: left;
+	margin-right: 5px;
+}
+
+.content-body.play-content .quiz-container .quizItem-wrapper .swiper-container.quizItem .swiper-wrapper .swiper-slide .click-quiz .click-item .item-block .item-inner span.clicking {
+	background: #0ad09a;
+	color: #fff;
+}
+
+.content-body.play-content .quiz-container .quizItem-wrapper .swiper-container.quizItem .swiper-wrapper .swiper-slide .click-quiz .click-item .item-block .item-inner span:last-of-type {
+	margin-right: 0;
+}
+
+.content-body.videoProfile-content .thumbnail-container {
+	background: url(../img/human.png) center center;
+	background-size: cover;
+	height: 321px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.content-body.videoProfile-content .thumbnail-container .top-shadow {
+	top: 0;
+	left: 0;
+	right: 0;
+	position: absolute;
+	height: 66px;
+	background: linear-gradient(to bottom, #000000, rgba(0, 0, 0, 0));
+	opacity: .3;
+}
+
+.content-body.videoProfile-content .thumbnail-container .bottom-shadow {
+	height: 229px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #000000 96%);
+	opacity: .3;
+}
+
+.content-body.videoProfile-content .videoInfo-container {
+	height: calc( 100vh - 298px);
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background: #fbfbfb;
+	border-radius: 21px 21px 0 0;
+	padding: 19px 19px 0;
+}
+
+.content-body.videoProfile-content .videoInfo-container.back {
+	-webkit-animation: touchE .7s ease-in-out both;
+	        animation: touchE .7s ease-in-out both;
+}
+
+@-webkit-keyframes touchE {
+	0% {
+		height: calc( 100vh - 66px);
+		border-radius: 0;
+	}
+	100% {
+		height: calc( 100vh - 303px);
+		border-radius: 21px 21px 0 0;
+	}
+}
+
+@keyframes touchE {
+	0% {
+		height: calc( 100vh - 66px);
+		border-radius: 0;
+	}
+	100% {
+		height: calc( 100vh - 303px);
+		border-radius: 21px 21px 0 0;
+	}
+}
+
+.content-body.videoProfile-content .videoInfo-container.touchstart {
+	height: calc( 100vh - 303px);
+	translate: .3s;
+}
+
+.content-body.videoProfile-content .videoInfo-container.touchend {
+	-webkit-animation: touchS .7s ease-in-out both;
+	        animation: touchS .7s ease-in-out both;
+	overflow-y: scroll;
+}
+
+@-webkit-keyframes touchS {
+	0% {
+		height: calc( 100vh - 303px);
+	}
+	100% {
+		height: calc( 100vh - 66px);
+		border-radius: 0;
+	}
+}
+
+@keyframes touchS {
+	0% {
+		height: calc( 100vh - 303px);
+	}
+	100% {
+		height: calc( 100vh - 66px);
+		border-radius: 0;
+	}
+}
+
+.content-body.videoProfile-content .videoInfo-container .text-wrapper .english {
+	font-size: 25px;
+	font-weight: 700;
+	color: #232631;
+	line-height: 29px;
+}
+
+.content-body.videoProfile-content .videoInfo-container .text-wrapper .korean {
+	margin-top: 4px;
+	font-size: 17px;
+	font-weight: 700;
+	color: #9396a1;
+	letter-spacing: -.7px;
+	line-height: 26px;
+}
+
+.content-body.videoProfile-content .videoInfo-container .text-wrapper .vietnam {
+	margin-top: 9px;
+	line-height: 25px;
+	color: rgba(29, 29, 29, 0.4);
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.content-body.videoProfile-content .videoInfo-container .text-wrapper .vietnam.shrink {
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	overflow: hidden;
+}
+
+.content-body.videoProfile-content .videoInfo-container .text-wrapper .more-btn {
+	margin-top: 5px;
+	background: none;
+	border: 0;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	color: rgba(29, 29, 29, 0.5);
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.content-body.videoProfile-content .videoInfo-container .video-wrapper {
+	margin-top: 30px;
+}
+
+.content-body.videoProfile-content .videoInfo-container .video-wrapper .title-inner {
+	margin-bottom: 11px;
+}
+
+.content-body.videoProfile-content .videoInfo-container .video-wrapper .title-inner h2 {
+	font-size: 17px;
+	font-weight: 700;
+	color: #232631;
+	letter-spacing: -.4px;
+	line-height: 26px;
+}
+
+.content-body.videoProfile-content .videoInfo-container .video-wrapper .list-inner .list-item {
+	margin-bottom: 15px;
+}
+
+.content-body.videoProfile-content .videoInfo-container .video-wrapper .list-inner .list-item:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.content-body.videoProfile-content .videoInfo-container .video-wrapper .list-inner .list-item .list-thumbnail {
+	background: url(../img/ssam.png) center center;
+	background-size: cover;
+	width: 160px;
+	height: 89px;
+	float: left;
+	position: relative;
+}
+
+.content-body.videoProfile-content .videoInfo-container .video-wrapper .list-inner .list-item .list-thumbnail .bar-timer {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+}
+
+.content-body.videoProfile-content .videoInfo-container .video-wrapper .list-inner .list-item .list-thumbnail .bar-timer .video-timer {
+	z-index: 1;
+	position: absolute;
+	right: 4px;
+	bottom: 7px;
+	background: rgba(0, 0, 0, 0.5);
+	width: 36px;
+	height: 16px;
+	border-radius: 99px;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+}
+
+.content-body.videoProfile-content .videoInfo-container .video-wrapper .list-inner .list-item .list-thumbnail .bar-timer .video-timer span {
+	font-size: 10px;
+	font-weight: 500;
+	color: rgba(255, 255, 255, 0.8);
+}
+
+.content-body.videoProfile-content .videoInfo-container .video-wrapper .list-inner .list-item .list-thumbnail .bar-timer .watching-bar {
+	height: 3px;
+	width: 100%;
+	background: #c9c9cb;
+}
+
+.content-body.videoProfile-content .videoInfo-container .video-wrapper .list-inner .list-item .list-thumbnail .bar-timer .watching-bar .color-bar {
+	height: 3px;
+	width: 20%;
+	background: #0ad09a;
+}
+
+.content-body.videoProfile-content .videoInfo-container .video-wrapper .list-inner .list-item .list-info {
+	width: calc( 100% - 160px);
+	float: right;
+	padding: 0 8px;
+}
+
+.content-body.videoProfile-content .videoInfo-container .video-wrapper .list-inner .list-item .list-info .video-subject {
+	font-size: 13px;
+	font-weight: 400;
+	color: #373737;
+	word-break: break-all;
+	line-height: 17px;
+}
+
+.content-body.videoProfile-content .videoInfo-container .video-wrapper .list-inner .list-item .list-info .video-sources {
+	margin-top: 3px;
+	font-size: 13px;
+	font-weight: 400;
+	color: #ababab;
+	letter-spacing: -.6px;
 }
 
 /*# sourceMappingURL=style.css.map */

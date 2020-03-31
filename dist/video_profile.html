@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1"/>
+    <meta name="format-detection" content="telephone=no">
+
+    <title>HEYSTARS</title>
+
+    <link rel="stylesheet" type="text/css" href="plugin/vendor.min.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <script type="text/javascript" src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+</head>
+<body class="@@class">
+<div class="wrapper">
+<header class="header subHeader white">
+    <img src="img/ic-back-white.png" alt="뒤로가기">
+</header>
+
+<div class="content-body videoProfile-content">
+    <div class="thumbnail-container">
+        <div class="top-shadow"></div>
+        <div class="bottom-shadow"></div>
+    </div>
+    <div class="videoInfo-container">
+        <div class="text-wrapper">
+            <h2 class="english">Are You Human?</h2>
+            <p class="korean noto-font">너도 인간이니?</p>
+            <p class="vietnam shrink" style="-webkit-box-orient: vertical;">Lee Ji-eun được biết đến với cái tên IU là một ca sĩ kiêm nhạc sĩ người Hàn Quốc. Khi còn ca sĩ kiêm nhạc sĩ người Hàn Quốc. Khi còn học cấp hai, IU đã thử giọng cho nhiều công ty khác nhau</p>
+            <button class="more-btn">more</button>
+        </div>
+        <div class="video-wrapper">
+            <div class="title-inner">
+                <h2 class="spoqa-font">관련 비디오</h2>
+            </div>
+            <div class="list-inner">
+                <div class="list-item">
+                    <div class="list-thumbnail">
+                        <div class="bar-timer">
+                            <div class="video-timer">
+                                <span class="spoqa-font">00:36</span>
+                            </div>
+                            <div class="watching-bar">
+                                <div class="color-bar"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-info">
+                        <p class="video-subject noto-font">IU - 잠 못드는 밤 비는 내리고 (Đêm tôi không ngủ được, mưa rơi.)Part.1</p>
+                        <p class="video-sources">KBS Media</p>
+                    </div>
+                </div>
+                <div class="list-item">
+                    <div class="list-thumbnail">
+                        <div class="bar-timer">
+                            <div class="video-timer">
+                                <span class="spoqa-font">00:36</span>
+                            </div>
+                            <div class="watching-bar">
+                                <div class="color-bar"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-info">
+                        <p class="video-subject noto-font">IU - 잠 못드는 밤 비는 내리고 (Đêm tôi không ngủ được, mưa rơi.)Part.1</p>
+                        <p class="video-sources">KBS Media</p>
+                    </div>
+                </div>
+                <div class="list-item">
+                    <div class="list-thumbnail">
+                        <div class="bar-timer">
+                            <div class="video-timer">
+                                <span class="spoqa-font">00:36</span>
+                            </div>
+                            <div class="watching-bar">
+                                <div class="color-bar"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-info">
+                        <p class="video-subject noto-font">IU - 잠 못드는 밤 비는 내리고 (Đêm tôi không ngủ được, mưa rơi.)Part.1</p>
+                        <p class="video-sources">KBS Media</p>
+                    </div>
+                </div>
+                <div class="list-item">
+                    <div class="list-thumbnail">
+                        <div class="bar-timer">
+                            <div class="video-timer">
+                                <span class="spoqa-font">00:36</span>
+                            </div>
+                            <div class="watching-bar">
+                                <div class="color-bar"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-info">
+                        <p class="video-subject noto-font">IU - 잠 못드는 밤 비는 내리고 (Đêm tôi không ngủ được, mưa rơi.)Part.1</p>
+                        <p class="video-sources">KBS Media</p>
+                    </div>
+                </div>
+                <div class="list-item">
+                    <div class="list-thumbnail">
+                        <div class="bar-timer">
+                            <div class="video-timer">
+                                <span class="spoqa-font">00:36</span>
+                            </div>
+                            <div class="watching-bar">
+                                <div class="color-bar"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-info">
+                        <p class="video-subject noto-font">IU - 잠 못드는 밤 비는 내리고 (Đêm tôi không ngủ được, mưa rơi.)Part.1</p>
+                        <p class="video-sources">KBS Media</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+</div>
+</body>
+
+<script type="text/javascript" src="plugin/vendor.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+</html>
+
+
+<script>
+
+    $(document).ready(function(){
+        $('.more-btn').click(function(){
+            $(this).siblings('.vietnam').toggleClass('shrink');
+        });
+
+        var startY, endY;
+        $('.videoInfo-container').on('touchstart',function(event){
+            $(this).addClass('touchstart');
+            startY = event.originalEvent.changedTouches[0].screenY;
+            console.log(startY);
+        });
+        $('.videoInfo-container').on('touchmove',function(event){
+
+            
+            console.log(startY-endY);
+            $(this).removeClass('touchstart').addClass('touchend');
+            
+        });
+
+        $('.videoInfo-container').on('touchend',function(event){
+            endY=event.originalEvent.changedTouches[0].screenY;
+            console.log(endY);
+            if ($(this).scrollTop() == 0) {
+                if(startY-endY < 50) {
+                    $(this).removeClass('touchend').addClass('back');
+                }
+            }
+        });
+        
+    });
+
+</script>

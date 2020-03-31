@@ -287,9 +287,17 @@ header .point-btn {
 	border: 0;
 }
 
+header.fixed.white {
+	background: #fff;
+}
+
 header.scrolled {
 	z-index: 2;
 	background: #fff;
+}
+
+header.scrolled.green {
+	background: #0ad09a;
 }
 
 header.subHeader {
@@ -302,10 +310,6 @@ header.subHeader {
 	-ms-flex-pack: center;
 	-webkit-justify-content: center;
 	        justify-content: center;
-}
-
-header.subHeader.green {
-	background: #0ad09a;
 }
 
 header.subHeader.search {

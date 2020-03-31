@@ -80,9 +80,8 @@
         .today-container {
             .wordSlide-wrapper {
                 margin-top: 17px;
-                padding-left: 18px;
                 .swiper-container.wordSlide {
-                    padding-bottom: 46px;
+                    padding: 0 18px 46px;
                     .swiper-wrapper {
                         .swiper-slide {
                             width: 158px;
@@ -94,7 +93,7 @@
                             >img {
                                 position: absolute;
                                 width: 20px;
-                                right: 14px;
+                                right: 11px;
                                 top: 14px;
                             }
                             .korean {
@@ -103,6 +102,11 @@
                                 letter-spacing: -.5px;
                                 color: #2f2d3b;
                                 margin-bottom: 1px;
+                                max-width: 108px;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                                word-wrap: normal;
+                                overflow: hidden;
                             }
                             .english {
                                 @include fontSize(13px,700);
@@ -165,13 +169,12 @@
                 }
             }
             .videoSlide-wrapper {
-                padding-left: 18px;
                 margin-top: 20px;
                 .swiper-container.videoSlide {
-                    padding-bottom: 46px;
+                    padding: 0 18px 46px;
                     .swiper-wrapper {
                         .swiper-slide {
-                            width: calc( 90% + 18px );
+                            width: 100%;
                             border-radius: 11px;
                             overflow: hidden;
                             box-shadow: 7px 18px 24px 0 rgba(0,0,0,.07);
