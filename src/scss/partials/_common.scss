@@ -4,7 +4,6 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    padding-left: 18px;
     @include flexCenter;
     z-index: 1;
     .main-logo {
@@ -86,7 +85,7 @@ header {
         }
         h1 {
             letter-spacing: -.7px;
-            @include fontSize(18px,500);
+            @include fontSize(17px,500);
             color: #424d5e;
         }
     }

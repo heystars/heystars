@@ -29,4 +29,20 @@ $(document).ready(function(){
         }
     });
 
+    var pageHtml = [
+        "/edit_myInfo.html",
+        "/agreement.html",
+    ];
+    var pageTitle = [
+        "내정보 수정",
+        "회사 약관 동의",
+    ];
+    
+    pageHtml.forEach(function(item, index, array){
+        if(item == location.pathname){
+            var pageTitleName = pageTitle[index];
+            $(".subHeader h1").text(pageTitleName);
+        }
+    });
+
 });

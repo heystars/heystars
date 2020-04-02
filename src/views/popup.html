@@ -52,7 +52,7 @@
                 <button class="noto-font closed">확인</button>
             </div>
         </div>
-        <div id="bm" style=""></div>
+        <div id="ani" class="ani"></div>
     </div>
 
     <div class="popup-wrapper">
@@ -101,7 +101,7 @@
                 <button class="noto-font closed">확인</button>
             </div>
         </div>
-        <!-- <div id="bm2" style=""></div> -->
+        <div id="ani2" class="ani"></div>
     </div>
 
     <div class="popup-wrapper">
@@ -146,27 +146,36 @@
 <script>
     
     $(document).ready(function(){
-
+        var animation = bodymovin.loadAnimation({
+            container: document.getElementById('ani'),
+            renderer: 'svg',
+            loop: false,
+            autoplay: false,
+            path: 'bg.json',
+        });
+        var animation2 = bodymovin.loadAnimation({
+            container: document.getElementById('ani2'),
+            renderer: 'svg',
+            loop: false,
+            autoplay: false,
+            path: 'bg.json',
+        });
         $('.pb').on('click',function(){
             var pb = $(this).index();
             $('.index-box > div').eq(pb).addClass('active');
-            var animation = bodymovin.loadAnimation({
-                container: document.getElementById('bm'),
-                renderer: 'svg',
-                loop: false,
-                autoplay: false,
-                path: 'bg.json',
-            });
+            $('.popup-wrapper').eq(pb).children('.ani').show();
+            animation.play();
+            animation2.play();
+            // animation.goToAndPlay(0);
             setTimeout(function() {
-                $('.popup-wrapper').eq(pb).children('#bm').hide();
-            }, 4000);
-            if( $('.popup-wrapper.active').hasClass('has-ani') ) {
-                animation.play();
-            }
+                $('.popup-wrapper').eq(pb).children('.ani').hide();
+            }, 3000);
         });        
 
         $('.closed').click(function(){
             $('.popup-wrapper').removeClass('active');
+            animation.stop();
+            animation2.stop();
         });
 
     });

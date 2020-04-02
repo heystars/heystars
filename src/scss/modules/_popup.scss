@@ -11,7 +11,7 @@
         &.active {
             @include flexAllCenter;
         }
-        #bm {
+        .ani {
             position: fixed;
             width: 100%;
             top: 0;

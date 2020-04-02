@@ -1207,7 +1207,7 @@
 	        justify-content: center;
 }
 
-.index-box .popup-wrapper #bm {
+.index-box .popup-wrapper .ani {
 	position: fixed;
 	width: 100%;
 	top: 0;
@@ -1790,6 +1790,13 @@
 
 .content-body.noteDetail-content .noteDetail-container .swiper-container.noteSlide .swiper-wrapper .swiper-slide .noteDetail-inner .item-box .steping .last-item strong.bad {
 	color: #f35858;
+}
+
+.content-body.noteDetail-content .noteDetail-container .swiper-container.noteSlide .swiper-wrapper .swiper-slide .noteDetail-inner .item-box .steping .last-item .ani {
+	position: fixed;
+	width: 100%;
+	bottom: -50%;
+	left: 0;
 }
 
 .content-body.noteDetail-content .noteDetail-container .swiper-container.noteSlide .swiper-wrapper .swiper-slide .noteDetail-inner .item-box .btn-step {
@@ -3157,6 +3164,481 @@
 	font-weight: 400;
 	color: #ababab;
 	letter-spacing: -.6px;
+}
+
+.content-body.mypage-content {
+	background: #d8d8d8;
+}
+
+.content-body.mypage-content .myItem-container {
+	padding-top: 30px;
+	min-height: 100vh;
+	position: relative;
+	background: #fff;
+}
+
+.content-body.mypage-content .myItem-container .title-wrapper {
+	padding-left: 24px;
+}
+
+.content-body.mypage-content .myItem-container .title-wrapper h1 {
+	font-size: 26px;
+	font-weight: 700;
+	color: #4d4d4d;
+	line-height: 39px;
+	letter-spacing: -.7px;
+}
+
+.content-body.mypage-content .myItem-container .profile-wrapper {
+	margin-top: 26px;
+	padding: 0 28px 42px 38px;
+	position: relative;
+}
+
+.content-body.mypage-content .myItem-container .profile-wrapper:after {
+	position: absolute;
+	left: 0;
+	content: "";
+	display: block;
+	width: 100%;
+	height: 14px;
+	background: rgba(216, 216, 216, 0.1);
+	bottom: 0;
+}
+
+.content-body.mypage-content .myItem-container .profile-wrapper .profile-image .my-face {
+	position: relative;
+	width: 50px;
+	height: 50px;
+	border-radius: 25px;
+	background: #24deb7;
+}
+
+.content-body.mypage-content .myItem-container .profile-wrapper .profile-image .my-face .edit-btn {
+	background: none;
+	border: 0;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	position: absolute;
+	bottom: 0;
+	right: -15px;
+}
+
+.content-body.mypage-content .myItem-container .profile-wrapper .profile-info {
+	margin-top: 17px;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+}
+
+.content-body.mypage-content .myItem-container .profile-wrapper .profile-info .nick-name {
+	font-size: 17px;
+	font-weight: 700;
+	color: #303948;
+}
+
+.content-body.mypage-content .myItem-container .profile-wrapper .profile-info .mail {
+	margin-left: 5px;
+	font-size: 12px;
+	font-weight: 400;
+	color: #a3abb8;
+}
+
+.content-body.mypage-content .myItem-container .profile-wrapper .profile-point {
+	margin-top: 14px;
+	position: relative;
+}
+
+.content-body.mypage-content .myItem-container .profile-wrapper .profile-point h2 {
+	color: #0ad09a;
+	font-size: 28px;
+	font-weight: 300;
+	letter-spacing: -.7px;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+}
+
+.content-body.mypage-content .myItem-container .profile-wrapper .profile-point h2 img {
+	margin-left: 6px;
+}
+
+.content-body.mypage-content .myItem-container .profile-wrapper .profile-point .watch-list {
+	position: absolute;
+	right: 0;
+	top: 50%;
+	-webkit-transform: translate(0, -50%);
+	    -ms-transform: translate(0, -50%);
+	        transform: translate(0, -50%);
+	background: none;
+	border: .7px solid #ddd;
+	border-radius: .7px;
+	width: 68px;
+	height: 26px;
+	font-size: 12px;
+	font-weight: 400;
+	color: #a3abb8;
+}
+
+.content-body.mypage-content .myItem-container .list-wrapper {
+	padding: 12px 0 78px 41px;
+}
+
+.content-body.mypage-content .myItem-container .list-wrapper ul li {
+	padding: 18px 0;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+}
+
+.content-body.mypage-content .myItem-container .list-wrapper ul li .imgBox {
+	width: 22px;
+	height: 22px;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	margin-right: 16px;
+}
+
+.content-body.mypage-content .myItem-container .version-wrapper {
+	background: rgba(216, 216, 216, 0.1);
+	height: 126px;
+	width: 100%;
+	text-align: center;
+	padding-top: 28px;
+}
+
+.content-body.mypage-content .myItem-container .version-wrapper p {
+	font-size: 14px;
+	font-weight: 400;
+	color: #a7abb1;
+}
+
+.content-body.edit-content {
+	padding: 62px 0 110px;
+}
+
+.content-body.edit-content .edit-container {
+	padding: 0 24px;
+}
+
+.content-body.edit-content .edit-container .myProfile-wrapper {
+	padding: 25px 0 38px;
+}
+
+.content-body.edit-content .edit-container .myProfile-wrapper .my-face {
+	position: relative;
+	width: 83px;
+	height: 83px;
+	background: url(../img/img-profile.png) center center;
+	background-size: cover;
+	border-radius: 44px;
+	margin: 0 auto;
+}
+
+.content-body.edit-content .edit-container .myProfile-wrapper .my-face .edit-btn {
+	position: absolute;
+	right: -4px;
+	bottom: 2px;
+	background: none;
+	border: 0;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+}
+
+.content-body.edit-content .edit-container .input-container .input-wrapper {
+	margin-bottom: 53px;
+}
+
+.content-body.edit-content .edit-container .input-container .input-wrapper:last-of-type {
+	margin-bottom: 0;
+}
+
+.content-body.edit-content .edit-container .input-container .input-wrapper .sub-title {
+	font-size: 15px;
+	font-weight: 700;
+	color: #41444a;
+	line-height: 20px;
+	margin-bottom: 21px;
+	letter-spacing: -.7px;
+}
+
+.content-body.edit-content .edit-container .input-container .input-wrapper .input-inner {
+	margin-bottom: 22px;
+}
+
+.content-body.edit-content .edit-container .input-container .input-wrapper .input-inner:last-of-type {
+	margin-bottom: 0;
+}
+
+.content-body.edit-content .edit-container .input-container .input-wrapper .input-inner label {
+	font-size: 14px;
+	font-weight: 400;
+	letter-spacing: -.6px;
+	color: #828590;
+	line-height: 20px;
+	margin-bottom: 3px;
+}
+
+.content-body.edit-content .edit-container .btn-wrapper button {
+	border-radius: 7px;
+	font-size: 17px;
+	font-weight: 400;
+}
+
+.content-body.edit-content .edit-container .out-wrapper {
+	margin-top: 31px;
+}
+
+.content-body.edit-content .edit-container .out-wrapper p {
+	font-size: 15px;
+	font-weight: 500;
+	line-height: 20px;
+	-webkit-text-decoration-line: underline;
+	        text-decoration-line: underline;
+	color: #db4f4f;
+	text-align: center;
+}
+
+.content-body.agree-content .agree-container {
+	padding: 86px 31px;
+	color: #36383b;
+	letter-spacing: -.7px;
+}
+
+.content-body.agree-content .agree-container h2 {
+	font-size: 17px;
+	font-weight: 700;
+	line-height: 30px;
+}
+
+.content-body.agree-content .agree-container p {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 27px;
+	word-break: break-all;
+}
+
+.content-body.language-content .language-container, .content-body.language-content .alarm-container, .content-body.alarm-content .language-container, .content-body.alarm-content .alarm-container {
+	padding: 74px 18px;
+}
+
+.content-body.language-content .language-container .title-wrapper h2, .content-body.language-content .alarm-container .title-wrapper h2, .content-body.alarm-content .language-container .title-wrapper h2, .content-body.alarm-content .alarm-container .title-wrapper h2 {
+	font-size: 22px;
+	font-weight: 700;
+	color: #171717;
+}
+
+.content-body.language-content .language-container .list-wrapper, .content-body.language-content .alarm-container .list-wrapper, .content-body.alarm-content .language-container .list-wrapper, .content-body.alarm-content .alarm-container .list-wrapper {
+	margin-top: 28px;
+}
+
+.content-body.language-content .language-container .list-wrapper ul li, .content-body.language-content .alarm-container .list-wrapper ul li, .content-body.alarm-content .language-container .list-wrapper ul li, .content-body.alarm-content .alarm-container .list-wrapper ul li {
+	height: 61px;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	border-bottom: 1px solid #f8f8f8;
+	font-size: 17px;
+	font-weight: 400;
+	color: #5e636a;
+	position: relative;
+}
+
+.content-body.language-content .language-container .list-wrapper ul li.contact, .content-body.language-content .alarm-container .list-wrapper ul li.contact, .content-body.alarm-content .language-container .list-wrapper ul li.contact, .content-body.alarm-content .alarm-container .list-wrapper ul li.contact {
+	font-size: 17px;
+	font-weight: 500;
+	color: #383838;
+}
+
+.content-body.language-content .language-container .list-wrapper ul li.alarm-item, .content-body.language-content .alarm-container .list-wrapper ul li.alarm-item, .content-body.alarm-content .language-container .list-wrapper ul li.alarm-item, .content-body.alarm-content .alarm-container .list-wrapper ul li.alarm-item {
+	font-size: 17px;
+	font-weight: 500;
+	color: #383838;
+	border: 0;
+	height: 30px;
+	margin-bottom: 35px;
+}
+
+.content-body.language-content .language-container .list-wrapper ul li.alarm-item:last-of-type, .content-body.language-content .alarm-container .list-wrapper ul li.alarm-item:last-of-type, .content-body.alarm-content .language-container .list-wrapper ul li.alarm-item:last-of-type, .content-body.alarm-content .alarm-container .list-wrapper ul li.alarm-item:last-of-type {
+	margin-bottom: 0;
+}
+
+.content-body.language-content .language-container .list-wrapper ul li .imgBox, .content-body.language-content .alarm-container .list-wrapper ul li .imgBox, .content-body.alarm-content .language-container .list-wrapper ul li .imgBox, .content-body.alarm-content .alarm-container .list-wrapper ul li .imgBox {
+	width: 22px;
+	height: 15px;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	margin-right: 11px;
+}
+
+.content-body.language-content .language-container .list-wrapper ul li > img, .content-body.language-content .alarm-container .list-wrapper ul li > img, .content-body.alarm-content .language-container .list-wrapper ul li > img, .content-body.alarm-content .alarm-container .list-wrapper ul li > img {
+	position: absolute;
+	right: 0;
+	top: 50%;
+	-webkit-transform: translate(0, -50%);
+	    -ms-transform: translate(0, -50%);
+	        transform: translate(0, -50%);
+}
+
+.content-body.language-content .language-container .list-wrapper ul li .checkbox-wrap, .content-body.language-content .alarm-container .list-wrapper ul li .checkbox-wrap, .content-body.alarm-content .language-container .list-wrapper ul li .checkbox-wrap, .content-body.alarm-content .alarm-container .list-wrapper ul li .checkbox-wrap {
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.content-body.language-content .language-container .list-wrapper ul li .checkbox-wrap input[type="checkbox"], .content-body.language-content .alarm-container .list-wrapper ul li .checkbox-wrap input[type="checkbox"], .content-body.alarm-content .language-container .list-wrapper ul li .checkbox-wrap input[type="checkbox"], .content-body.alarm-content .alarm-container .list-wrapper ul li .checkbox-wrap input[type="checkbox"] {
+	display: none;
+}
+
+.content-body.language-content .language-container .list-wrapper ul li .checkbox-wrap input[type="checkbox"] + label, .content-body.language-content .alarm-container .list-wrapper ul li .checkbox-wrap input[type="checkbox"] + label, .content-body.alarm-content .language-container .list-wrapper ul li .checkbox-wrap input[type="checkbox"] + label, .content-body.alarm-content .alarm-container .list-wrapper ul li .checkbox-wrap input[type="checkbox"] + label {
+	position: relative;
+}
+
+.content-body.language-content .language-container .list-wrapper ul li .checkbox-wrap input[type="checkbox"] + label .checkbox-custom, .content-body.language-content .alarm-container .list-wrapper ul li .checkbox-wrap input[type="checkbox"] + label .checkbox-custom, .content-body.alarm-content .language-container .list-wrapper ul li .checkbox-wrap input[type="checkbox"] + label .checkbox-custom, .content-body.alarm-content .alarm-container .list-wrapper ul li .checkbox-wrap input[type="checkbox"] + label .checkbox-custom {
+	display: inline-block;
+	width: 50px;
+	height: 30px;
+	border-radius: 15px;
+	vertical-align: middle;
+	background: #c5c7d2;
+}
+
+.content-body.language-content .language-container .list-wrapper ul li .checkbox-wrap input[type="checkbox"] + label .circle, .content-body.language-content .alarm-container .list-wrapper ul li .checkbox-wrap input[type="checkbox"] + label .circle, .content-body.alarm-content .language-container .list-wrapper ul li .checkbox-wrap input[type="checkbox"] + label .circle, .content-body.alarm-content .alarm-container .list-wrapper ul li .checkbox-wrap input[type="checkbox"] + label .circle {
+	width: 23px;
+	height: 23px;
+	background: #fff;
+	border-radius: 12px;
+	position: absolute;
+	left: 4px;
+	top: 50%;
+	-webkit-transform: translate(0, -50%);
+	    -ms-transform: translate(0, -50%);
+	        transform: translate(0, -50%);
+	transition: .3s;
+}
+
+.content-body.language-content .language-container .list-wrapper ul li .checkbox-wrap input[type="checkbox"]:checked + label .checkbox-custom, .content-body.language-content .alarm-container .list-wrapper ul li .checkbox-wrap input[type="checkbox"]:checked + label .checkbox-custom, .content-body.alarm-content .language-container .list-wrapper ul li .checkbox-wrap input[type="checkbox"]:checked + label .checkbox-custom, .content-body.alarm-content .alarm-container .list-wrapper ul li .checkbox-wrap input[type="checkbox"]:checked + label .checkbox-custom {
+	background: #0ad09a;
+}
+
+.content-body.language-content .language-container .list-wrapper ul li .checkbox-wrap input[type="checkbox"]:checked + label .circle, .content-body.language-content .alarm-container .list-wrapper ul li .checkbox-wrap input[type="checkbox"]:checked + label .circle, .content-body.alarm-content .language-container .list-wrapper ul li .checkbox-wrap input[type="checkbox"]:checked + label .circle, .content-body.alarm-content .alarm-container .list-wrapper ul li .checkbox-wrap input[type="checkbox"]:checked + label .circle {
+	transition: .3s;
+	left: 23px;
+}
+
+.content-body.service-content {
+	height: 100vh;
+	background: url(../img/img-service-center.png) right 7vh no-repeat;
+	background-size: cover;
+}
+
+.content-body.service-content .service-container {
+	padding: 148px 43px;
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+}
+
+.content-body.service-content .service-container .text-wrapper {
+	color: #fff;
+}
+
+.content-body.service-content .service-container .text-wrapper h1 {
+	font-size: 35px;
+	font-weight: 900;
+	line-height: 35px;
+	letter-spacing: .8px;
+}
+
+.content-body.service-content .service-container .text-wrapper p {
+	margin-top: 12px;
+	font-size: 29px;
+	font-weight: 100;
+	line-height: 40px;
+	letter-spacing: -1.3px;
+}
+
+.content-body.service-content .service-container .item-wrapper {
+	color: #fff;
+	text-align: center;
+	position: absolute;
+	bottom: 148px;
+	width: calc( 100% - 86px);
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+}
+
+.content-body.service-content .service-container .item-wrapper .item-inner p {
+	font-size: 21px;
+	font-weight: 500;
+	line-height: 35px;
+	letter-spacing: .4px;
+}
+
+.content-body.service-content .service-container .item-wrapper .item-inner .mail-btn {
+	margin-top: 13px;
+	background: #0ad09a;
+	color: #fff;
+	border: 0;
+	width: 140px;
+	height: 42px;
+	border-radius: 21px;
+	font-size: 11px;
+	font-weight: 500;
+	letter-spacing: -.3px;
 }
 
 /*# sourceMappingURL=style.css.map */

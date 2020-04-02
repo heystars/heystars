@@ -80,6 +80,7 @@
                                 <div class="last-item">
                                     <strong>Excellent!</strong>
                                     <p class="noto-font">한국인 이신가요?<img src="img/emoji-good.png" alt="좋아요"></p>
+                                    <div id="ani3" class="ani"></div>
                                 </div>
                             </div>
                             <div class="btn-step" id="slide01">
@@ -157,9 +158,10 @@
                                 <div class="last-item">
                                     <strong>Excellent!</strong>
                                     <p class="noto-font">한국인 이신가요?<img src="img/emoji-good.png" alt="좋아요"></p>
+                                    <div id="ani4" class="ani"></div>
                                 </div>
                             </div>
-                            <div class="btn-step" id="slide01">
+                            <div class="btn-step" id="slide02">
                                 <div class="default-btn active">
                                     <img src="img/ic-shape.png" alt="입모양">
                                     <p class="noto-font">발음하기</p>
@@ -304,37 +306,55 @@ $(document).ready(function(){
 
     });
 
-    $('#slide03').click(function(){
-
-        if ( $(this).children('.active').next().is('div') ) {
-            $(this).siblings('.steping').children('.active').removeClass('active').next().addClass('active');
-            $(this).children('.active').removeClass('active').next().addClass('active');
-        } else {
-            $(this).siblings('.steping').children('.active').removeClass('active');
-            $(this).siblings('.steping').children('.first-item').addClass('active');
-            $(this).children('.active').removeClass('active');
-            $(this).children('.first-step').addClass('active');
-        }
-
-        if ( $(this).children('.second-step').hasClass('active') ) {
-            $(this).siblings('.my-action').addClass('active');
-        } else {
-            $(this).siblings('.my-action').removeClass('active');
-        }
-
-    });
-
 
     var noteSwiper = new Swiper('.swiper-container.noteSlide',{
-      centeredSlides: true,
-      loop: false,
-      slidesPerView: 'auto',
-      spaceBetween: 21,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      }
+        centeredSlides: true,
+        loop: false,
+        slidesPerView: 'auto',
+        spaceBetween: 21,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        }
    });
+
+    var animation3 = bodymovin.loadAnimation({
+        container: document.getElementById('ani3'),
+        renderer: 'svg',
+        loop: false,
+        autoplay: false,
+        path: 'bg.json',
+    });
+    var animation4 = bodymovin.loadAnimation({
+        container: document.getElementById('ani4'),
+        renderer: 'svg',
+        loop: false,
+        autoplay: false,
+        path: 'bg.json',
+    });
+    $('#slide01 .second-step').on('click',function(){
+        $('.last-item').children('.ani').show();
+        animation3.play();
+        setTimeout(function() {
+            $('.last-item').children('.ani').hide();
+        }, 3000);
+    });        
+
+    $('#slide01 .last-step').click(function(){
+        animation3.stop();
+    });
+
+    $('#slide02 .second-step').on('click',function(){
+        $('.last-item').children('.ani').show();
+        animation4.play();
+        setTimeout(function() {
+            $('.last-item').children('.ani').hide();
+        }, 3000);
+    });        
+
+    $('#slide02 .last-step').click(function(){
+        animation4.stop();
+    });
 
 });
 

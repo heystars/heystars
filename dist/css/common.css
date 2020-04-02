@@ -262,7 +262,6 @@ header {
 	position: fixed;
 	top: 0;
 	left: 0;
-	padding-left: 18px;
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
@@ -392,7 +391,7 @@ header.subHeader img {
 
 header.subHeader h1 {
 	letter-spacing: -.7px;
-	font-size: 18px;
+	font-size: 17px;
 	font-weight: 500;
 	color: #424d5e;
 }
