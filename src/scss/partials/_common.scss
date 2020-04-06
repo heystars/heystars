@@ -6,6 +6,7 @@ header {
     left: 0;
     @include flexCenter;
     z-index: 1;
+    padding-left: 18px;
     .main-logo {
         width: 113px;
     }

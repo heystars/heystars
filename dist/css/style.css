@@ -507,7 +507,7 @@
 }
 
 .content-body.main-content .loopSlide-container .swiper-container.loopSlide .swiper-pagination {
-	bottom: -22px;
+	bottom: 22px;
 }
 
 .content-body.main-content .loopSlide-container .swiper-container.loopSlide .swiper-pagination.swiper-pagination-bullets .swiper-pagination-bullet {
@@ -1551,6 +1551,7 @@
 	padding-top: 51px;
 	background: #fcfcfc;
 	min-height: 100%;
+	overflow: hidden;
 }
 
 .content-body.noteDetail-content .noteDetail-container .noteDetail-subject {
@@ -1793,10 +1794,11 @@
 }
 
 .content-body.noteDetail-content .noteDetail-container .swiper-container.noteSlide .swiper-wrapper .swiper-slide .noteDetail-inner .item-box .steping .last-item .ani {
-	position: fixed;
+	position: absolute;
 	width: 100%;
-	bottom: -50%;
+	bottom: -200%;
 	left: 0;
+	z-index: 9;
 }
 
 .content-body.noteDetail-content .noteDetail-container .swiper-container.noteSlide .swiper-wrapper .swiper-slide .noteDetail-inner .item-box .btn-step {

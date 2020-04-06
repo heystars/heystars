@@ -57,7 +57,7 @@
                     }
                 }
                 .swiper-pagination {
-                    bottom: -22px;
+                    bottom: 22px;
                     &.swiper-pagination-bullets {
                         .swiper-pagination-bullet {
                             margin-left: 0;
@@ -120,6 +120,12 @@
                                 letter-spacing: -.07px;
                                 color: #bfbfbf;
                             }
+                            // #test {
+                            //     position: absolute;
+                            //     width: 100%;
+                            //     right: 11px;
+                            //     top: 14px;
+                            // }
                         }
                     }
                 }
